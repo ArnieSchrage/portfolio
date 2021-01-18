@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Arnie Schrage - Digital creator / User Experience Designer</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="style/style.css" />
+
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="icons/favicon/apple-touch-icon.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="icons/favicon/favicon-32x32.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="icons/favicon/favicon-16x16.png"
+    />
+    <link rel="manifest" href="icons/favicon/site.webmanifest" />
+    <link
+      rel="mask-icon"
+      href="icons/favicon/safari-pinned-tab.svg"
+      color="#5bbad5"
+    />
+    <script
+      src="https://kit.fontawesome.com/4157a6758e.js"
+      crossorigin="anonymous"
+    ></script>
+
+    <meta name="msapplication-TileColor" content="#da532c" />
+    <meta name="theme-color" content="#ffffff" />
+  </head>
+  <body>
+    <header>
+      <div class="container-fluid page-padding">
+        <div class="row">
+          <div class="col">
+            <nav class="main-nav navbar navbar-expand-lg">
+              <div class="container-fluid">
+                <a class="navbar-brand" href="#"
+                  ><span class="arnie-logo">Arnie</span
+                  ><span class="schrage-logo">Schrage</span>
+                </a>
+                <ul class="navbar-nav">
+                  <li class="nav-item">
+                    <a class="nav-link" href="#">What i do.</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#">My work.</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#">Get in touch.</a>
+                  </li>
+                </ul>
+              </div>
+            </nav>
+          </div>
+        </div>
+      </div>
+    </header>
+    <main class="main-page">
+      <section class="container-fluid landing-page page-padding">
+        <div class="col-6">
+          <h1 class="landing-title">
+            <span class="outline-text weight400">Nice to</span> <br />meet you.
+          </h1>
+          <p class="main-text landing-text">
+            My name is Arnie, a digital creator with a focus on user centric
+            design. I develop the seamless user experience that your project
+            needs in order to reach your targeted goals. Let me show you how…
+          </p>
+        </div>
+
+        <div class="container-fluid">
+          <lottie-player
+            src="https://assets10.lottiefiles.com/packages/lf20_rycdh53q.json"
+            background="transparent"
+            speed="1"
+            style="width: 100%; height: 100%"
+            loop
+            autoplay
+          ></lottie-player>
+          <a href="#contact">
+            <div
+              class="container contact-button cta-button flex-nowrap align-content-center"
+            >
+              <div class="d-flex flex-row">
+                <div class="col-3 text-center">
+                  <img
+                    src="icons/smile.svg"
+                    alt="smiley icon"
+                    class="button-icon"
+                  />
+                </div>
+                <div class="col-9 text-center">
+                  <p>Say hi!</p>
+                </div>
+              </div>
+            </div>
+          </a>
+        </div>
+      </section>
+      <section class="container-fluid what-i-do page-padding">
+        <div class="col align-self-center">
+          <h1 class="main-title text-white">What i do.</h1>
+        </div>
+        <div class="col align-self-center">
+          <div id="accordion">
+            <div class="card">
+              <div class="card-header" id="headingOne">
+                <h5 class="mb-0">
+                  <button
+                    class="btn btn-link accordion-title"
+                    data-toggle="collapse"
+                    data-target="#collapseOne"
+                    aria-expanded="true"
+                    aria-controls="collapseOne"
+                  >
+                    User Experience Design
+                  </button>
+                </h5>
+              </div>
+
+              <div
+                id="collapseOne"
+                class="collapse show"
+                aria-labelledby="headingOne"
+                data-parent="#accordion"
+              >
+                <div class="card-body main-text">
+                  In a world full of devices and interfaces, attention is scarce
+                  and precious. That’s why we need to be extremely carefull on
+                  how to use this brief moment of focus. By studying the
+                  complete customer journey and converting this into meaningful
+                  wireframes/prototypes/flowcharts, making sure the attention of
+                  your users will not be wasted by bad design choices.
+                </div>
+              </div>
+            </div>
+            <div class="card">
+              <div class="card-header" id="headingTwo">
+                <h5 class="mb-0">
+                  <button
+                    class="btn btn-link collapsed accordion-title"
+                    data-toggle="collapse"
+                    data-target="#collapseTwo"
+                    aria-expanded="false"
+                    aria-controls="collapseTwo"
+                  >
+                    Front End Development
+                  </button>
+                </h5>
+              </div>
+              <div
+                id="collapseTwo"
+                class="collapse"
+                aria-labelledby="headingTwo"
+                data-parent="#accordion"
+              >
+                <div class="card-body main-text">
+                  Converting the designed wireframes, prototypes and flowcharts
+                  into effective and user-friendly webpages through HTML / CSS /
+                  JS and WordPress CMS.
+                </div>
+              </div>
+            </div>
+            <div class="card">
+              <div class="card-header" id="headingThree">
+                <h5 class="mb-0">
+                  <button
+                    class="btn btn-link collapsed accordion-title"
+                    data-toggle="collapse"
+                    data-target="#collapseThree"
+                    aria-expanded="false"
+                    aria-controls="collapseThree"
+                  >
+                    Content Creation
+                  </button>
+                </h5>
+              </div>
+              <div
+                id="collapseThree"
+                class="collapse"
+                aria-labelledby="headingThree"
+                data-parent="#accordion"
+              >
+                <div class="card-body main-text">
+                  Creating all kinds of content suitable for your marketing &
+                  branding campaign, like videoproduction, editing, animations
+                  and more.
+                </div>
+              </div>
+            </div>
+            <div class="card">
+              <div class="card-header" id="headingFour">
+                <h5 class="mb-0">
+                  <button
+                    class="btn btn-link collapsed accordion-title"
+                    data-toggle="collapse"
+                    data-target="#collapseFour"
+                    aria-expanded="false"
+                    aria-controls="collapseFour"
+                  >
+                    Creative Concepts
+                  </button>
+                </h5>
+              </div>
+              <div
+                id="collapseFour"
+                class="collapse"
+                aria-labelledby="headingFour"
+                data-parent="#accordion"
+              >
+                <div class="card-body main-text">
+                  Creating all kinds of content suitable for your marketing &
+                  branding campaign, like videoproduction, editing, animations
+                  and more.
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="container-fluid page-padding brands-padding">
+        <div class="grid">
+          <i class="fab fa-html5"><p class="icon-desc">HTML5</p></i>
+          <i class="fab fa-css3-alt"><p class="icon-desc">CSS3</p></i>
+          <i class="fab fa-js"><p class="icon-desc">JavaScript</p></i>
+          <i class="fab fa-bootstrap"><p class="icon-desc">Bootstrap</p></i>
+          <i class="fab fa-figma"><p class="icon-desc">Figma</p></i>
+          <i class="fab fa-sass"><p class="icon-desc">Sass</p></i>
+          <i class="fab fa-github"><p class="icon-desc">GitHub</p></i>
+          <i class="fab fa-wordpress"><p class="icon-desc">WordPress</p></i>
+          <i class="fab fa-vuejs"><p class="icon-desc">VueJS</p></i>
+        </div>
+      </section>
+      <section class="black">
+        <h1>4th</h1>
+      </section>
+    </main>
+    <script
+      src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+      integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"
+      integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"
+      integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
+      crossorigin="anonymous"
+    ></script>
+    <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
+    <script src=""></script>
+  </body>
+</html>

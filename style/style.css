@@ -1,0 +1,591 @@
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+
+body {
+  line-height: 1;
+}
+
+ol,
+ul {
+  list-style: none;
+}
+
+blockquote,
+q {
+  quotes: none;
+}
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: "";
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+
+body {
+  line-height: 1;
+}
+
+ol,
+ul {
+  list-style: none;
+}
+
+blockquote,
+q {
+  quotes: none;
+}
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: "";
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+@font-face {
+  font-family: "ITC Avant Garde Gothic";
+  src: url("../fonts/ITCAvantGardeGothicBook/ITCAvantGardeGothicBook.woff2") format("woff2"), url("../fonts/ITCAvantGardeGothicBook/ITCAvantGardeGothicBook.woff") format("woff");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "ITC Avant Garde Gothic";
+  src: url("../fonts/ITCAvantGardeGothicBold/ITCAvantGardeGothicBold.woff2") format("woff2"), url("../fonts/ITCAvantGardeGothicBold/ITCAvantGardeGothicBold.woff") format("woff");
+  font-weight: 600;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "ITC Avant Garde Gothic";
+  src: url("../fonts/ITCAvantGardeGothicMedium/ITCAvantGardeGothicMedium.woff2") format("woff2"), url("../fonts/ITCAvantGardeGothicMedium/ITCAvantGardeGothicMedium.woff") format("woff");
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Sofia";
+  src: url("../fonts/Sofia/SofiaBlack.woff2") format("woff2"), url("../fonts/Sofia/SofiaBlack.woff") format("woff");
+  font-weight: 900;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Sofia";
+  src: url("../fonts/Sofia/SofiaBlackItalic.woff2") format("woff2"), url("../fonts/Sofia/SofiaBlackItalic.woff") format("woff");
+  font-weight: 900;
+  font-style: italic;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Sofia";
+  src: url("../fonts/Sofia/SofiaSemiBoldItalic.woff2") format("woff2"), url("../fonts/Sofia/SofiaSemiBoldItalic.woff") format("woff");
+  font-weight: 600;
+  font-style: italic;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Sofia";
+  src: url("../fonts/Sofia/SofiaRegularItalic.woff2") format("woff2"), url("../fonts/Sofia/SofiaRegularItalic.woff") format("woff");
+  font-weight: normal;
+  font-style: italic;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Sofia";
+  src: url("../fonts/Sofia/SofiaLightItalic.woff2") format("woff2"), url("../fonts/Sofia/SofiaLightItalic.woff") format("woff");
+  font-weight: 300;
+  font-style: italic;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Sofia";
+  src: url("../fonts/Sofia/SofiaMediumItalic.woff2") format("woff2"), url("../fonts/Sofia/SofiaMediumItalic.woff") format("woff");
+  font-weight: 500;
+  font-style: italic;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Sofia";
+  src: url("../fonts/Sofia/SofiaLight.woff2") format("woff2"), url("../fonts/Sofia/SofiaLight.woff") format("woff");
+  font-weight: 300;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Sofia";
+  src: url("../fonts/Sofia/SofiaMedium.woff2") format("woff2"), url("../fonts/Sofia/SofiaMedium.woff") format("woff");
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Sofia";
+  src: url("../fonts/Sofia/SofiaSemiBold.woff2") format("woff2"), url("../fonts/Sofia/SofiaSemiBold.woff") format("woff");
+  font-weight: 600;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Sofia";
+  src: url("../fonts/Sofia/SofiaBold.woff2") format("woff2"), url("../fonts/Sofia/SofiaBold.woff") format("woff");
+  font-weight: bold;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Sofia";
+  src: url("../fonts/Sofia/SofiaBoldItalic.woff2") format("woff2"), url("../fonts/Sofia/SofiaBoldItalic.woff") format("woff");
+  font-weight: bold;
+  font-style: italic;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Sofia";
+  src: url("../fonts/Sofia/SofiaRegular.woff2") format("woff2"), url("../fonts/Sofia/SofiaRegular.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+body {
+  overflow: hidden;
+}
+
+header {
+  position: fixed;
+  width: 100vw;
+  opacity: 1;
+  padding-top: 2%;
+}
+
+h1 {
+  font-family: "ITC Avant Garde Gothic";
+  font-weight: 500;
+  color: #2e2b2b;
+}
+
+p,
+a {
+  font-family: "Sofia";
+  font-size: 1vw;
+  color: #2e2b2b;
+}
+
+a {
+  text-decoration: none;
+}
+
+.landing-page {
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.arnie-logo {
+  font-family: "ITC Avant Garde Gothic";
+  font-size: 1.5vw;
+  font-weight: 300;
+  text-transform: uppercase;
+}
+
+.schrage-logo {
+  font-family: "ITC Avant Garde Gothic";
+  font-size: 1.5vw;
+  font-weight: 300;
+  -webkit-text-stroke-width: 1px;
+  -webkit-text-stroke-color: black;
+  color: rgba(0, 0, 0, 0);
+  text-transform: uppercase;
+}
+
+.page-padding {
+  padding: 0% 5%;
+}
+
+.what-i-do {
+  background-color: black;
+}
+
+.landing-title,
+.main-title {
+  font-size: 6vw;
+  font-weight: 600;
+}
+
+.accordion-title {
+  font-family: "ITC Avant Garde Gothic";
+  font-size: 3vw;
+  font-weight: 600;
+  text-decoration: none;
+}
+
+.landing-text {
+  padding: 5%;
+}
+
+.main-nav {
+  font-family: "ITC Avant Garde Gothic";
+  font-size: 1vw;
+  text-transform: uppercase;
+}
+
+.main-text {
+  font-weight: normal;
+  font-style: normal;
+  line-height: 2em;
+  text-align: justify;
+}
+
+.outline-text {
+  -webkit-text-stroke-width: 1px;
+  -webkit-text-stroke-color: black;
+  color: rgba(0, 0, 0, 0);
+}
+
+.weight400 {
+  font-weight: 400;
+}
+
+.main-page {
+  overflow-y: scroll;
+  max-height: 100vh;
+  -ms-scroll-snap-type: y mandatory;
+      scroll-snap-type: y mandatory;
+}
+
+section {
+  scroll-snap-align: start;
+  height: 100vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+}
+
+.black {
+  color: white;
+  background-color: darkgray;
+}
+
+.placeholder {
+  background-color: gray;
+  height: 100px;
+  width: 100%;
+}
+
+.cta-button {
+  border-top: 1px;
+  border-right: 3px;
+  border-bottom: 3px;
+  border-left: 1px;
+  border-style: solid;
+  border-color: black;
+}
+
+.contact-button {
+  max-width: 10vw;
+  padding: 2% 3%;
+}
+
+.button-icon {
+  width: 1vw;
+  height: auto;
+}
+
+.card {
+  background-color: transparent;
+}
+
+.card-header button {
+  color: #0ba0ff;
+}
+
+.card-header {
+  padding: 0.5rem 0rem;
+}
+
+.card-body {
+  font-family: "Sofia";
+  color: white;
+}
+
+.adobe-logo {
+  width: 8vw;
+  fill: #2e2b2b;
+}
+
+.grid {
+  display: -ms-grid;
+  display: grid;
+  width: 100%;
+  -ms-grid-columns: 1fr 1fr 1fr;
+      grid-template-columns: 1fr 1fr 1fr;
+  -ms-grid-rows: 1fr 1fr 1fr;
+      grid-template-rows: 1fr 1fr 1fr;
+  grid-gap: 20px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  justify-items: center;
+}
+
+.grid .fab {
+  font-size: 8vw;
+  color: #2e2b2b;
+}
+
+.fab:hover {
+  font-size: 8vw;
+  color: #0ba0ff;
+}
+
+.icon-desc {
+  text-align: center;
+  padding-top: 2vh;
+  font-weight: 900;
+  font-size: 1vw;
+}
+
+.brands-padding {
+  padding: 5% 15%;
+}
+/*# sourceMappingURL=style.css.map */

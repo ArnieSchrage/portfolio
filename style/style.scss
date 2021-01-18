@@ -1,0 +1,190 @@
+@import "reset";
+@import "fonts";
+
+$header-height: 10vh;
+$title-font: "ITC Avant Garde Gothic";
+$text-font: "Sofia";
+$font-color: #2e2b2b;
+$page-padding: 0% 5%;
+$icon-size: 8vw;
+
+body {
+  overflow: hidden;
+}
+header {
+  position: fixed;
+  width: 100vw;
+  opacity: 1;
+  padding-top: 2%;
+}
+
+h1 {
+  font-family: $title-font;
+  font-weight: 500;
+  color: $font-color;
+}
+p,
+a {
+  font-family: $text-font;
+  font-size: 1vw;
+  color: $font-color;
+}
+a {
+  text-decoration: none;
+}
+
+.landing-page {
+  justify-content: center;
+  align-items: center;
+}
+.arnie-logo {
+  font-family: $title-font;
+  font-size: 1.5vw;
+  font-weight: 300;
+  text-transform: uppercase;
+}
+.schrage-logo {
+  font-family: $title-font;
+  font-size: 1.5vw;
+  font-weight: 300;
+  -webkit-text-stroke-width: 1px;
+  -webkit-text-stroke-color: black;
+  color: rgba(0, 0, 0, 0);
+  text-transform: uppercase;
+}
+.page-padding {
+  padding: $page-padding;
+}
+.what-i-do {
+  background-color: black;
+}
+
+.landing-title,
+.main-title {
+  font-size: 6vw;
+  font-weight: 600;
+}
+
+.accordion-title {
+  font-family: $title-font;
+  font-size: 3vw;
+  font-weight: 600;
+  text-decoration: none;
+}
+
+.landing-text {
+  padding: 5%;
+}
+.main-nav {
+  font-family: $title-font;
+  font-size: 1vw;
+  text-transform: uppercase;
+}
+.main-text {
+  font-weight: normal;
+  font-style: normal;
+  line-height: 2em;
+  text-align: justify;
+}
+
+.outline-text {
+  -webkit-text-stroke-width: 1px;
+  -webkit-text-stroke-color: black;
+  color: rgba(0, 0, 0, 0);
+}
+
+.weight400 {
+  font-weight: 400;
+}
+
+.main-page {
+  overflow-y: scroll;
+  max-height: 100vh;
+  scroll-snap-type: y mandatory;
+}
+
+section {
+  scroll-snap-align: start;
+  height: 100vh;
+  display: flex;
+  flex-direction: row;
+}
+
+.black {
+  color: white;
+  background-color: darkgray;
+}
+
+.placeholder {
+  background-color: gray;
+  height: 100px;
+  width: 100%;
+}
+.cta-button {
+  border-top: 1px;
+  border-right: 3px;
+  border-bottom: 3px;
+  border-left: 1px;
+  border-style: solid;
+  border-color: black;
+}
+
+.contact-button {
+  max-width: 10vw;
+  padding: 2% 3%;
+}
+.button-icon {
+  width: 1vw;
+  height: auto;
+}
+
+.card {
+  background-color: transparent;
+}
+
+.card-header button {
+  color: #0ba0ff;
+}
+
+.card-header {
+  padding: 0.5rem 0rem;
+}
+.card-body {
+  font-family: $text-font;
+  color: white;
+}
+.adobe-logo {
+  width: $icon-size;
+  fill: #2e2b2b;
+}
+
+.grid {
+  display: grid;
+  width: 100%;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr;
+  grid-gap: 20px;
+  align-items: center;
+  justify-items: center;
+}
+
+.grid .fab {
+  font-size: $icon-size;
+  color: #2e2b2b;
+}
+
+.fab:hover {
+  font-size: $icon-size;
+  color: #0ba0ff;
+}
+
+.icon-desc {
+  text-align: center;
+  padding-top: 2vh;
+  font-weight: 900;
+  font-size: 1vw;
+}
+
+.brands-padding {
+  padding: 5% 15%;
+}
