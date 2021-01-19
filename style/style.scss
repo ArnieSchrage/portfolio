@@ -4,25 +4,39 @@
 $header-height: 10vh;
 $title-font: "ITC Avant Garde Gothic";
 $text-font: "Sofia";
-$font-color: #2e2b2b;
-$page-padding: 0% 5%;
+$font-color: #222831;
+$page-padding: 0% 10vw;
 $icon-size: 8vw;
-
+$dark-background: #222831;
+$background: #393e46;
+$regular-color: #00adb5;
+$power-color: #00fff5;
 body {
   overflow: hidden;
 }
 header {
-  position: fixed;
+  background: white;
+  position: relative;
   width: 100vw;
   opacity: 1;
-  padding-top: 2%;
 }
 
+.brands-section {
+  background: white;
+}
 h1 {
   font-family: $title-font;
   font-weight: 500;
   color: $font-color;
 }
+.main-text-light {
+  font-weight: normal;
+  font-style: normal;
+  line-height: 2em;
+  text-align: justify;
+  color: white !important;
+}
+
 p,
 a {
   font-family: $text-font;
@@ -36,6 +50,7 @@ a {
 .landing-page {
   justify-content: center;
   align-items: center;
+  background: white;
 }
 .arnie-logo {
   font-family: $title-font;
@@ -47,22 +62,36 @@ a {
   font-family: $title-font;
   font-size: 1.5vw;
   font-weight: 300;
-  -webkit-text-stroke-width: 1px;
-  -webkit-text-stroke-color: black;
   color: rgba(0, 0, 0, 0);
   text-transform: uppercase;
+  -webkit-text-stroke-width: 1px;
+  -webkit-text-stroke-color: white;
+  mix-blend-mode: difference;
 }
 .page-padding {
   padding: $page-padding;
 }
+
 .what-i-do {
-  background-color: black;
+  background-color: $dark-background;
 }
 
 .landing-title,
 .main-title {
   font-size: 6vw;
   font-weight: 600;
+}
+
+.project-title {
+  font-family: $title-font;
+  font-size: 2.5vw;
+  font-weight: 500;
+}
+
+.short-description {
+  font-family: $title-font;
+  font-size: 1.5vw;
+  font-weight: 300;
 }
 
 .accordion-title {
@@ -75,10 +104,20 @@ a {
 .landing-text {
   padding: 5%;
 }
+
+.mix-this {
+  color: white;
+  mix-blend-mode: difference;
+}
+.fixed {
+  position: fixed;
+  mix-blend-mode: difference;
+}
 .main-nav {
   font-family: $title-font;
   font-size: 1vw;
   text-transform: uppercase;
+  padding: 2% 5vw;
 }
 .main-text {
   font-weight: normal;
@@ -87,12 +126,17 @@ a {
   text-align: justify;
 }
 
-.outline-text {
+.outline-text-black {
   -webkit-text-stroke-width: 1px;
   -webkit-text-stroke-color: black;
   color: rgba(0, 0, 0, 0);
 }
 
+.outline-text-white {
+  -webkit-text-stroke-width: 1px;
+  -webkit-text-stroke-color: white;
+  color: rgba(0, 0, 0, 0);
+}
 .weight400 {
   font-weight: 400;
 }
@@ -101,6 +145,7 @@ a {
   overflow-y: scroll;
   max-height: 100vh;
   scroll-snap-type: y mandatory;
+  scroll-behavior: smooth;
 }
 
 section {
@@ -110,16 +155,6 @@ section {
   flex-direction: row;
 }
 
-.black {
-  color: white;
-  background-color: darkgray;
-}
-
-.placeholder {
-  background-color: gray;
-  height: 100px;
-  width: 100%;
-}
 .cta-button {
   border-top: 1px;
   border-right: 3px;
@@ -140,14 +175,16 @@ section {
 
 .card {
   background-color: transparent;
+  border: none;
 }
 
 .card-header button {
-  color: #0ba0ff;
+  color: $power-color;
 }
 
 .card-header {
   padding: 0.5rem 0rem;
+  border: none;
 }
 .card-body {
   font-family: $text-font;
@@ -170,14 +207,17 @@ section {
 
 .grid .fab {
   font-size: $icon-size;
-  color: #2e2b2b;
+  color: $dark-background;
 }
 
 .fab:hover {
   font-size: $icon-size;
-  color: #0ba0ff;
+  color: $regular-color;
 }
 
+.btn-link:hover {
+  color: #ffffff;
+}
 .icon-desc {
   text-align: center;
   padding-top: 2vh;
@@ -187,4 +227,8 @@ section {
 
 .brands-padding {
   padding: 5% 15%;
+}
+
+.my-work {
+  background-color: $dark-background;
 }

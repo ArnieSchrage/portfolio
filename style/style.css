@@ -385,23 +385,35 @@ body {
 }
 
 header {
-  position: fixed;
+  background: white;
+  position: relative;
   width: 100vw;
   opacity: 1;
-  padding-top: 2%;
+}
+
+.brands-section {
+  background: white;
 }
 
 h1 {
   font-family: "ITC Avant Garde Gothic";
   font-weight: 500;
-  color: #2e2b2b;
+  color: #222831;
+}
+
+.main-text-light {
+  font-weight: normal;
+  font-style: normal;
+  line-height: 2em;
+  text-align: justify;
+  color: white !important;
 }
 
 p,
 a {
   font-family: "Sofia";
   font-size: 1vw;
-  color: #2e2b2b;
+  color: #222831;
 }
 
 a {
@@ -415,6 +427,7 @@ a {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  background: white;
 }
 
 .arnie-logo {
@@ -428,24 +441,37 @@ a {
   font-family: "ITC Avant Garde Gothic";
   font-size: 1.5vw;
   font-weight: 300;
-  -webkit-text-stroke-width: 1px;
-  -webkit-text-stroke-color: black;
   color: rgba(0, 0, 0, 0);
   text-transform: uppercase;
+  -webkit-text-stroke-width: 1px;
+  -webkit-text-stroke-color: white;
+  mix-blend-mode: difference;
 }
 
 .page-padding {
-  padding: 0% 5%;
+  padding: 0% 10vw;
 }
 
 .what-i-do {
-  background-color: black;
+  background-color: #222831;
 }
 
 .landing-title,
 .main-title {
   font-size: 6vw;
   font-weight: 600;
+}
+
+.project-title {
+  font-family: "ITC Avant Garde Gothic";
+  font-size: 2.5vw;
+  font-weight: 500;
+}
+
+.short-description {
+  font-family: "ITC Avant Garde Gothic";
+  font-size: 1.5vw;
+  font-weight: 300;
 }
 
 .accordion-title {
@@ -459,10 +485,21 @@ a {
   padding: 5%;
 }
 
+.mix-this {
+  color: white;
+  mix-blend-mode: difference;
+}
+
+.fixed {
+  position: fixed;
+  mix-blend-mode: difference;
+}
+
 .main-nav {
   font-family: "ITC Avant Garde Gothic";
   font-size: 1vw;
   text-transform: uppercase;
+  padding: 2% 5vw;
 }
 
 .main-text {
@@ -472,9 +509,15 @@ a {
   text-align: justify;
 }
 
-.outline-text {
+.outline-text-black {
   -webkit-text-stroke-width: 1px;
   -webkit-text-stroke-color: black;
+  color: rgba(0, 0, 0, 0);
+}
+
+.outline-text-white {
+  -webkit-text-stroke-width: 1px;
+  -webkit-text-stroke-color: white;
   color: rgba(0, 0, 0, 0);
 }
 
@@ -487,6 +530,7 @@ a {
   max-height: 100vh;
   -ms-scroll-snap-type: y mandatory;
       scroll-snap-type: y mandatory;
+  scroll-behavior: smooth;
 }
 
 section {
@@ -499,17 +543,6 @@ section {
   -webkit-box-direction: normal;
       -ms-flex-direction: row;
           flex-direction: row;
-}
-
-.black {
-  color: white;
-  background-color: darkgray;
-}
-
-.placeholder {
-  background-color: gray;
-  height: 100px;
-  width: 100%;
 }
 
 .cta-button {
@@ -533,14 +566,16 @@ section {
 
 .card {
   background-color: transparent;
+  border: none;
 }
 
 .card-header button {
-  color: #0ba0ff;
+  color: #00fff5;
 }
 
 .card-header {
   padding: 0.5rem 0rem;
+  border: none;
 }
 
 .card-body {
@@ -570,12 +605,16 @@ section {
 
 .grid .fab {
   font-size: 8vw;
-  color: #2e2b2b;
+  color: #222831;
 }
 
 .fab:hover {
   font-size: 8vw;
-  color: #0ba0ff;
+  color: #00adb5;
+}
+
+.btn-link:hover {
+  color: #ffffff;
 }
 
 .icon-desc {
@@ -587,5 +626,9 @@ section {
 
 .brands-padding {
   padding: 5% 15%;
+}
+
+.my-work {
+  background-color: #222831;
 }
 /*# sourceMappingURL=style.css.map */
