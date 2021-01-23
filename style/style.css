@@ -466,7 +466,7 @@ a {
 
 .landing-title,
 .main-title {
-  font-size: 6vw;
+  font-size: 5vw;
   font-weight: 600;
 }
 
@@ -486,8 +486,9 @@ a {
   position: sticky;
   position: -webkit-sticky;
   /* Safari */
-  top: 10vh;
+  top: 15vh;
   padding: 0% 10vw;
+  margin-bottom: 1%;
 }
 
 .short-description {
@@ -604,6 +605,7 @@ section {
 .card-body {
   font-family: "Sofia";
   color: white;
+  font-size: 1vw;
 }
 
 .adobe-logo {
@@ -652,7 +654,7 @@ section {
 }
 
 .vh100col {
-  height: 100vh;
+  height: 100%;
 }
 
 .my-work {
@@ -674,6 +676,10 @@ section {
   margin-top: 10vh;
 }
 
+.carousel-item {
+  padding-top: 10vh;
+}
+
 .project-link {
   padding-top: 2%;
 }
@@ -681,5 +687,14 @@ section {
 a {
   color: white;
   text-decoration: underline;
+}
+
+.footer {
+  background-color: #222831;
+  height: 15vh;
+}
+
+.getintouch {
+  height: calc(100vh - 15vh);
 }
 /*# sourceMappingURL=style.css.map */

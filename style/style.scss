@@ -6,6 +6,7 @@ $title-font: "ITC Avant Garde Gothic";
 $text-font: "Sofia";
 $font-color: #222831;
 $page-padding: 0% 10vw;
+$footer-height: 15vh;
 $icon-size: 8vw;
 $dark-background: #222831;
 $background: #393e46;
@@ -85,7 +86,7 @@ a {
 
 .landing-title,
 .main-title {
-  font-size: 6vw;
+  font-size: 5vw;
   font-weight: 600;
 }
 
@@ -103,8 +104,9 @@ a {
 .mywork-title {
   position: sticky;
   position: -webkit-sticky; /* Safari */
-  top: 10vh;
+  top: 15vh;
   padding: 0% 10vw;
+  margin-bottom: 1%;
 }
 
 .short-description {
@@ -209,6 +211,7 @@ section {
 .card-body {
   font-family: $text-font;
   color: white;
+  font-size: 1vw;
 }
 .adobe-logo {
   width: $icon-size;
@@ -249,7 +252,7 @@ section {
   padding: 5% 15%;
 }
 .vh100col {
-  height: 100vh;
+  height: 100%;
 }
 
 .my-work {
@@ -270,10 +273,22 @@ section {
   margin-top: 10vh;
 }
 
+.carousel-item {
+  padding-top: 10vh;
+}
 .project-link {
   padding-top: 2%;
 }
 a {
   color: white;
   text-decoration: underline;
+}
+
+.footer {
+  background-color: #222831;
+  height: $footer-height;
+}
+
+.getintouch {
+  height: calc(100vh - #{$footer-height});
 }
