@@ -697,4 +697,8 @@ a {
 .getintouch {
   height: calc(100vh - 15vh);
 }
+
+.something {
+  height: 0;
+}
 /*# sourceMappingURL=style.css.map */
