@@ -6,7 +6,7 @@ $title-font: "ITC Avant Garde Gothic";
 $text-font: "Sofia";
 $font-color: #222831;
 $page-padding: 0% 10vw;
-$footer-height: 15vh;
+$footer-height: 10vh;
 $icon-size: 8vw;
 $dark-background: #222831;
 $background: #393e46;
@@ -187,9 +187,29 @@ section {
 }
 
 .contact-button {
+  transition: background-color 0.5s ease;
+  background-color: white;
+  color: $dark-background;
   max-width: 10vw;
   padding: 2% 3%;
+
+  p,
+  i,
+  a {
+    transition: color 0.5s ease;
+    color: $dark-background;
+  }
 }
+
+.contact-button:hover {
+  background-color: $dark-background;
+  p,
+  i,
+  a {
+    color: white;
+  }
+}
+
 .button-icon {
   width: 1vw;
   height: auto;
@@ -233,7 +253,7 @@ section {
   color: $dark-background;
 }
 
-.fab:hover {
+.brands-section .fab:hover {
   font-size: $icon-size;
   color: $regular-color;
 }
@@ -293,6 +313,44 @@ a {
   height: calc(100vh - #{$footer-height});
 }
 
-.something {
-  height: 0;
+.footer h2 {
+  color: white;
+  font-family: $text-font;
+  font-size: 0.8vw;
+}
+
+.footer a {
+  text-decoration: none;
+  font-size: 0.8vw;
+}
+
+.footer .social-icon {
+  margin-right: 20px;
+}
+
+.contact-text {
+  padding: 5vh 20vw;
+}
+
+.contact-button-footer {
+  max-width: 10vw;
+  padding: 1vh;
+  transition: background-color 0.5s ease;
+
+  p,
+  i {
+    transition: color 0.5s ease;
+    color: $dark-background;
+  }
+}
+
+.contact-button-footer:hover {
+  background-color: $dark-background;
+  p,
+  i {
+    color: white;
+  }
+  img {
+    fill: white;
+  }
 }

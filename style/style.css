@@ -579,8 +579,30 @@ section {
 }
 
 .contact-button {
+  -webkit-transition: background-color 0.5s ease;
+  transition: background-color 0.5s ease;
+  background-color: white;
+  color: #222831;
   max-width: 10vw;
   padding: 2% 3%;
+}
+
+.contact-button p,
+.contact-button i,
+.contact-button a {
+  -webkit-transition: color 0.5s ease;
+  transition: color 0.5s ease;
+  color: #222831;
+}
+
+.contact-button:hover {
+  background-color: #222831;
+}
+
+.contact-button:hover p,
+.contact-button:hover i,
+.contact-button:hover a {
+  color: white;
 }
 
 .button-icon {
@@ -633,7 +655,7 @@ section {
   color: #222831;
 }
 
-.fab:hover {
+.brands-section .fab:hover {
   font-size: 8vw;
   color: #00adb5;
 }
@@ -691,14 +713,56 @@ a {
 
 .footer {
   background-color: #222831;
-  height: 15vh;
+  height: 10vh;
 }
 
 .getintouch {
-  height: calc(100vh - 15vh);
+  height: calc(100vh - 10vh);
 }
 
-.something {
-  height: 0;
+.footer h2 {
+  color: white;
+  font-family: "Sofia";
+  font-size: 0.8vw;
+}
+
+.footer a {
+  text-decoration: none;
+  font-size: 0.8vw;
+}
+
+.footer .social-icon {
+  margin-right: 20px;
+}
+
+.contact-text {
+  padding: 5vh 20vw;
+}
+
+.contact-button-footer {
+  max-width: 10vw;
+  padding: 1vh;
+  -webkit-transition: background-color 0.5s ease;
+  transition: background-color 0.5s ease;
+}
+
+.contact-button-footer p,
+.contact-button-footer i {
+  -webkit-transition: color 0.5s ease;
+  transition: color 0.5s ease;
+  color: #222831;
+}
+
+.contact-button-footer:hover {
+  background-color: #222831;
+}
+
+.contact-button-footer:hover p,
+.contact-button-footer:hover i {
+  color: white;
+}
+
+.contact-button-footer:hover img {
+  fill: white;
 }
 /*# sourceMappingURL=style.css.map */
