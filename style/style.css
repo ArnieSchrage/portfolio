@@ -740,7 +740,7 @@ a {
 }
 
 .contact-button-footer {
-  max-width: 10vw;
+  width: 10vw;
   padding: 1vh;
   -webkit-transition: background-color 0.5s ease;
   transition: background-color 0.5s ease;
@@ -764,9 +764,5 @@ a {
 
 .contact-button-footer:hover img {
   fill: white;
-}
-
-test {
-  test: 0;
 }
 /*# sourceMappingURL=style.css.map */
