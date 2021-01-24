@@ -11907,6 +11907,25 @@ a {
   background-color: #222831;
 }
 
+video {
+  max-width: 100%;
+}
+
+.project-title {
+  font-family: "ITC Avant Garde Gothic";
+  font-size: 6vw;
+  font-weight: 500;
+  padding-bottom: 2.5%;
+}
+
+.short-description {
+  font-family: "ITC Avant Garde Gothic";
+}
+
+.main-text-light {
+  color: white;
+}
+
 @media (min-width: 1200px) {
   body {
     overflow: hidden;

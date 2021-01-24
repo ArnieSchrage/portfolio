@@ -170,6 +170,25 @@ a {
 .my-work {
   background-color: $dark-background;
 }
+
+video {
+  max-width: 100%;
+}
+
+.project-title {
+  font-family: $title-font;
+  font-size: 6vw;
+  font-weight: 500;
+  padding-bottom: 2.5%;
+}
+
+.short-description {
+  font-family: $title-font;
+}
+
+.main-text-light {
+  color: white;
+}
 ////////////////////////////////////////////////////////////////
 @include media-breakpoint-up(sm) {
 }
