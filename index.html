@@ -46,72 +46,87 @@
   <body>
     <main class="main-page">
       <header>
-        <div class="container-fluid g-0 fixed">
-          <div class="row g-0">
-            <div class="col">
-              <nav class="main-nav navbar navbar-expand-lg">
-                <div class="container-fluid">
-                  <a class="navbar-brand mix-this" href="#landing-page"
-                    ><span class="arnie-logo">Arnie</span
-                    ><span class="schrage-logo">Schrage</span>
-                  </a>
-                  <ul class="navbar-nav">
-                    <li class="nav-item">
-                      <a class="nav-link mix-this" href="#what-i-do"
-                        >What i do.</a
-                      >
-                    </li>
-                    <li class="nav-item">
-                      <a class="nav-link mix-this" href="#my-work">My work.</a>
-                    </li>
-                    <li class="nav-item">
-                      <a class="nav-link mix-this" href="#get-in-touch"
-                        >Get in touch.</a
-                      >
-                    </li>
-                  </ul>
-                </div>
-              </nav>
+        <nav class="main-nav navbar navbar-expand-lg fixed">
+          <div class="container-fluid">
+            <a class="navbar-brand mix-this" href="#landing-page"
+              ><span class="arnie-logo">Arnie</span
+              ><span class="schrage-logo">Schrage</span>
+            </a>
+            <button
+              class="navbar-toggler"
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#navbarNav"
+              aria-controls="navbarNav"
+              aria-expanded="false"
+              aria-label="Toggle navigation"
+            >
+              <span class="navbar-toggler-icon"
+                ><i class="fas fa-bars" style="color: #fff; font-size: 28px"></i
+              ></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+              <ul class="navbar-nav">
+                <li class="nav-item">
+                  <a class="nav-link mix-this" href="#what-i-do">What i do.</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link mix-this" href="#my-work">My work.</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link mix-this" href="#get-in-touch"
+                    >Get in touch.</a
+                  >
+                </li>
+              </ul>
             </div>
           </div>
-        </div>
+        </nav>
       </header>
-      <section class="container-fluid landing-page page-padding" id="landing-page">
-        <div class="col-6">
-          <h1 class="landing-title">
-            <span class="outline-text-black weight400">Nice to</span> <br />meet
-            you.
-          </h1>
-          <p class="main-text landing-text">
-            My name is Arnie, a digital creator with a focus on user centric
-            design. I develop the seamless user experience that your project
-            needs in order to reach your targeted goals. Let me show you how…
-          </p>
-        </div>
+      <section
+        class="container-fluid landing-page page-padding"
+        id="landing-page"
+      >
+        <div class="row d-flex">
+          <div class="col-md-6 col-12">
+            <h1 class="landing-title">
+              <span class="outline-text-black nice-to">Nice to</span>
+              <br />meet you.
+            </h1>
+            <p class="main-text landing-text">
+              My name is Arnie, a digital creator with a focus on user centric
+              design. I develop the seamless user experience that your project
+              needs in order to reach your targeted goals. Let me show you how…
+            </p>
+          </div>
 
-        <div class="container-fluid">
-          <lottie-player
-            src="https://assets10.lottiefiles.com/packages/lf20_rycdh53q.json"
-            background="transparent"
-            speed="1"
-            style="width: 100%; height: 100%"
-            loop
-            autoplay
-          ></lottie-player>
-          <a style="text-decoration: none" href="mailto:hello@arnieschrage.nl">
-            <div
-              class="container contact-button cta-button flex-nowrap align-content-center"
+          <div class="col-md-6 col-12">
+            <lottie-player
+              src="https://assets10.lottiefiles.com/packages/lf20_rycdh53q.json"
+              background="transparent"
+              speed="1"
+              style="width: 100%; height: 100%"
+              loop
+              autoplay
+            ></lottie-player>
+            <a
+              style="text-decoration: none"
+              href="mailto:hello@arnieschrage.nl"
             >
-              <div class="d-flex flex-row">
-                <div class="col-3 text-center">
-                  <i class="far fa-laugh"></i>
-                </div>
-                <div class="col-9 text-center">
-                  <p>Say hi!</p>
+              <div
+                class="container contact-button cta-button flex-nowrap align-content-center"
+              >
+                <div class="d-flex flex-row">
+                  <div class="col-3 text-center">
+                    <i class="far fa-laugh"></i>
+                  </div>
+                  <div class="col-9 text-center">
+                    <p>Say hi!</p>
+                  </div>
                 </div>
               </div>
-            </div>
-          </a>
+            </a>
+          </div>
         </div>
       </section>
       <section class="container-fluid what-i-do page-padding" id="what-i-do">
@@ -564,44 +579,50 @@
         class="container-fluid landing-page page-padding getintouch"
         id="get-in-touch"
       >
-        
-          <div class="col text-center">
-            <h1 class="landing-title">
-              <span class="outline-text-black weight400">Let's get</span>
-              in touch.
-            </h1>
-            <p class="main-text contact-text text-center">
-              Send me a message if you would like to work with me, or if you
-              want to know more about what i can do for your business / project.
-              I won't bite...
-            </p>
-            <a style="text-decoration: none" href="mailto:hello@arnieschrage.nl">
-              <div
-                class="container contact-button-footer cta-button flex-nowrap align-content-center"
-              >
-                <div class="d-flex flex-row">
-                  <div class="col-3 text-center">
-                    <i class="far fa-laugh"></i>
-                    
-                  </div>
-                  <div class="col-9 text-center">
-                    <p>Email me</p>
-                  </div>
+        <div class="col text-center">
+          <h1 class="landing-title">
+            <span class="outline-text-black weight400">Let's get</span>
+            in touch.
+          </h1>
+          <p class="main-text contact-text text-center">
+            Send me a message if you would like to work with me, or if you want
+            to know more about what i can do for your business / project. I
+            won't bite...
+          </p>
+          <a style="text-decoration: none" href="mailto:hello@arnieschrage.nl">
+            <div
+              class="container contact-button-footer cta-button flex-nowrap align-content-center"
+            >
+              <div class="d-flex flex-row">
+                <div class="col-3 text-center">
+                  <i class="far fa-laugh"></i>
+                </div>
+                <div class="col-9 text-center">
+                  <p>Email me</p>
                 </div>
               </div>
-            </a>
-          </div>
+            </div>
+          </a>
         </div>
-
-        
       </section>
       <footer class="footer d-flex align-items-center justify-content-evenly">
         <h2>© Copyright 2021 - Arnie Schrage</h2>
-        <a href="mailto:hello@arnieschrage.nl"><h2>hello@arnieschrage.nl</h2></a>
+        <a href="mailto:hello@arnieschrage.nl"
+          ><h2>hello@arnieschrage.nl</h2></a
+        >
         <div class="socials">
-          
-<a href="//linkedin.com/in/arnie-schrage" target="_blank" class="social-icon" ><i class="fab fa-linkedin"></i></a>
-<a href="//github.com/ArnieSchrage" target="_blank"  class="social-icon"><i class="fab fa-github"></i></a>
+          <a
+            href="//linkedin.com/in/arnie-schrage"
+            target="_blank"
+            class="social-icon"
+            ><i class="fab fa-linkedin"></i
+          ></a>
+          <a
+            href="//github.com/ArnieSchrage"
+            target="_blank"
+            class="social-icon"
+            ><i class="fab fa-github"></i
+          ></a>
         </div>
       </footer>
     </main>
