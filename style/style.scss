@@ -13,10 +13,15 @@ $dark-background: #222831;
 $background: #393e46;
 $regular-color: #00adb5;
 $power-color: #00fff5;
+
+//// XS style (< 576px)
 h1 {
   font-family: $title-font;
   font-weight: 500;
   color: $font-color;
+}
+.main-title {
+  font-size: 15vw;
 }
 .main-nav {
   font-family: $title-font;
@@ -32,12 +37,8 @@ h1 {
   color: white;
 }
 
-.nav-item {
-  text-align: center;
-}
 .landing-page {
   padding-top: $header-height;
-  height: calc(100vh - #{$header-height});
 }
 .landing-title {
   font-size: 15vw;
@@ -103,7 +104,73 @@ a {
 
 .contact-button {
   display: none;
-} ////////////////////////////////////////////////////////////////
+}
+
+.card {
+  background-color: transparent;
+  border: none;
+}
+
+.card-header button {
+  color: $power-color;
+}
+
+.card-header {
+  padding: 0.5rem 0rem;
+  border: none;
+}
+.accordion-title {
+  font-family: $title-font;
+  font-size: 6vw;
+  font-weight: 600;
+  text-decoration: none;
+}
+.card-body {
+  font-family: $text-font;
+  color: white;
+  font-size: 4.5vw;
+}
+.what-i-do {
+  background-color: $dark-background;
+}
+
+.grid {
+  display: grid;
+  width: 100%;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr;
+  grid-row-gap: 0%;
+  align-items: center;
+  justify-items: center;
+}
+
+.grid .fab {
+  font-size: 10vw;
+  color: $dark-background;
+  text-align: center;
+}
+
+.brands-section .fab:hover {
+  font-size: 12vw;
+  color: $regular-color;
+}
+.brands-section {
+  height: 50vh;
+}
+
+.btn-link:hover {
+  color: #ffffff;
+}
+.icon-desc {
+  text-align: center;
+  padding-top: 2vh;
+  font-weight: 900;
+  font-size: 4.5vw;
+}
+.my-work {
+  background-color: $dark-background;
+}
+////////////////////////////////////////////////////////////////
 @include media-breakpoint-up(sm) {
 }
 @include media-breakpoint-up(md) {
@@ -337,10 +404,6 @@ a {
     font-family: $text-font;
     color: white;
     font-size: 1vw;
-  }
-  .adobe-logo {
-    width: $icon-size;
-    fill: #2e2b2b;
   }
 
   .grid {

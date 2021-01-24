@@ -4,12 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Arnie Schrage - Digital creator / User Experience Designer</title>
-    <link
-      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css"
-      rel="stylesheet"
-      integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1"
-      crossorigin="anonymous"
-    />
+
     <link rel="stylesheet" href="style/style.css" />
 
     <link
@@ -88,7 +83,7 @@
         id="landing-page"
       >
         <div class="row d-flex">
-          <div class="col-md-6 col-12">
+          <div class="col-md-6 col-12 order-md-0 order-1">
             <h1 class="landing-title">
               <span class="outline-text-black nice-to">Nice to</span>
               <br />meet you.
@@ -100,7 +95,7 @@
             </p>
           </div>
 
-          <div class="col-md-6 col-12">
+          <div class="col-md-6 col-12 order-md-1 order-0">
             <lottie-player
               src="https://assets10.lottiefiles.com/packages/lf20_rycdh53q.json"
               background="transparent"
@@ -130,124 +125,127 @@
         </div>
       </section>
       <section class="container-fluid what-i-do page-padding" id="what-i-do">
-        <div class="col align-self-center">
-          <h1 class="main-title text-white">
-            <span class="outline-text-white"> What i </span>do.
-          </h1>
-        </div>
-        <div class="col align-self-center">
-          <div id="accordion">
-            <div class="card">
-              <div class="card-header" id="headingOne">
-                <h5 class="mb-0">
-                  <button
-                    class="btn btn-link accordion-title"
-                    data-toggle="collapse"
-                    data-target="#collapseOne"
-                    aria-expanded="true"
-                    aria-controls="collapseOne"
-                  >
-                    User Experience Design
-                  </button>
-                </h5>
-              </div>
+        <div class="row">
+          <div class="col-12 col-md-6 align-self-center text-center">
+            <h1 class="main-title text-white">
+              <span class="outline-text-white"> What i </span>do.
+            </h1>
+          </div>
+          <div class="col-12 col-md-6 align-self-md-center text-center">
+            <div id="accordion">
+              <div class="card">
+                <div class="card-header" id="headingOne">
+                  <h5 class="mb-0">
+                    <button
+                      class="btn btn-link accordion-title"
+                      data-toggle="collapse"
+                      data-target="#collapseOne"
+                      aria-expanded="true"
+                      aria-controls="collapseOne"
+                    >
+                      User Experience Design
+                    </button>
+                  </h5>
+                </div>
 
-              <div
-                id="collapseOne"
-                class="collapse show"
-                aria-labelledby="headingOne"
-                data-parent="#accordion"
-              >
-                <div class="card-body main-text">
-                  In a world full of devices and interfaces, attention is scarce
-                  and precious. That’s why we need to be extremely carefull on
-                  how to use this brief moment of focus. By studying the
-                  complete customer journey and converting this into meaningful
-                  wireframes/prototypes/flowcharts, making sure the attention of
-                  your users will not be wasted by bad design choices.
+                <div
+                  id="collapseOne"
+                  class="collapse show"
+                  aria-labelledby="headingOne"
+                  data-parent="#accordion"
+                >
+                  <div class="card-body main-text">
+                    In a world full of devices and interfaces, attention is
+                    scarce and precious. That’s why we need to be extremely
+                    carefull on how to use this brief moment of focus. By
+                    studying the complete customer journey and converting this
+                    into meaningful wireframes/prototypes/flowcharts, making
+                    sure the attention of your users will not be wasted by bad
+                    design choices.
+                  </div>
                 </div>
               </div>
-            </div>
-            <div class="card">
-              <div class="card-header" id="headingTwo">
-                <h5 class="mb-0">
-                  <button
-                    class="btn btn-link collapsed accordion-title"
-                    data-toggle="collapse"
-                    data-target="#collapseTwo"
-                    aria-expanded="false"
-                    aria-controls="collapseTwo"
-                  >
-                    Front End Development
-                  </button>
-                </h5>
-              </div>
-              <div
-                id="collapseTwo"
-                class="collapse"
-                aria-labelledby="headingTwo"
-                data-parent="#accordion"
-              >
-                <div class="card-body main-text">
-                  Converting the designed wireframes, prototypes and flowcharts
-                  into effective and user-friendly webpages through HTML / CSS /
-                  JS and WordPress CMS. Currently learning more advanced
-                  front-end frameworks like Vue.JS and React.
+              <div class="card">
+                <div class="card-header" id="headingTwo">
+                  <h5 class="mb-0">
+                    <button
+                      class="btn btn-link collapsed accordion-title"
+                      data-toggle="collapse"
+                      data-target="#collapseTwo"
+                      aria-expanded="false"
+                      aria-controls="collapseTwo"
+                    >
+                      Front End Development
+                    </button>
+                  </h5>
+                </div>
+                <div
+                  id="collapseTwo"
+                  class="collapse"
+                  aria-labelledby="headingTwo"
+                  data-parent="#accordion"
+                >
+                  <div class="card-body main-text">
+                    Converting the designed wireframes, prototypes and
+                    flowcharts into effective and user-friendly webpages through
+                    HTML / CSS / JS and WordPress CMS. Currently learning more
+                    advanced front-end frameworks like Vue.JS and React.
+                  </div>
                 </div>
               </div>
-            </div>
-            <div class="card">
-              <div class="card-header" id="headingThree">
-                <h5 class="mb-0">
-                  <button
-                    class="btn btn-link collapsed accordion-title"
-                    data-toggle="collapse"
-                    data-target="#collapseThree"
-                    aria-expanded="false"
-                    aria-controls="collapseThree"
-                  >
-                    Content Creation
-                  </button>
-                </h5>
-              </div>
-              <div
-                id="collapseThree"
-                class="collapse"
-                aria-labelledby="headingThree"
-                data-parent="#accordion"
-              >
-                <div class="card-body main-text">
-                  Creating all kinds of content suitable for your marketing &
-                  branding campaign, like videoproduction, editing, animations
-                  and more.
+              <div class="card">
+                <div class="card-header" id="headingThree">
+                  <h5 class="mb-0">
+                    <button
+                      class="btn btn-link collapsed accordion-title"
+                      data-toggle="collapse"
+                      data-target="#collapseThree"
+                      aria-expanded="false"
+                      aria-controls="collapseThree"
+                    >
+                      Content Creation
+                    </button>
+                  </h5>
+                </div>
+                <div
+                  id="collapseThree"
+                  class="collapse"
+                  aria-labelledby="headingThree"
+                  data-parent="#accordion"
+                >
+                  <div class="card-body main-text">
+                    Creating all kinds of content suitable for your marketing &
+                    branding campaign, like videoproduction, editing, animations
+                    and more.
+                  </div>
                 </div>
               </div>
-            </div>
-            <div class="card">
-              <div class="card-header" id="headingFour">
-                <h5 class="mb-0">
-                  <button
-                    class="btn btn-link collapsed accordion-title"
-                    data-toggle="collapse"
-                    data-target="#collapseFour"
-                    aria-expanded="false"
-                    aria-controls="collapseFour"
-                  >
-                    Creative Concepts
-                  </button>
-                </h5>
-              </div>
-              <div
-                id="collapseFour"
-                class="collapse"
-                aria-labelledby="headingFour"
-                data-parent="#accordion"
-              >
-                <div class="card-body main-text">
-                  Creating a strategy to reach your target audience in a way
-                  that makes them remember it, by designing with the 'wow'
-                  factor in mind. If you want to make a lasting impression on
-                  your users, make sure you invest into creative concepts.
+              <div class="card">
+                <div class="card-header" id="headingFour">
+                  <h5 class="mb-0">
+                    <button
+                      class="btn btn-link collapsed accordion-title"
+                      data-toggle="collapse"
+                      data-target="#collapseFour"
+                      aria-expanded="false"
+                      aria-controls="collapseFour"
+                    >
+                      Creative Concepts
+                    </button>
+                  </h5>
+                </div>
+                <div
+                  id="collapseFour"
+                  class="collapse"
+                  aria-labelledby="headingFour"
+                  data-parent="#accordion"
+                >
+                  <div class="card-body main-text">
+                    Creating a strategy to reach your target audience in a way
+                    that makes them remember it, by designing with the 'wow'
+                    factor in mind. If you want to make a lasting impression on
+                    your users, make sure you invest into creative concepts.
+                  </div>
                 </div>
               </div>
             </div>
@@ -296,7 +294,7 @@
                 <div class="container-fluid">
                   <div class="row">
                     <div
-                      class="col-6 d-flex flex-column justify-content-center align-items-stretch"
+                      class="col-12 col-md-6 d-flex flex-column justify-content-center align-items-stretch"
                     >
                       <div class="project-details">
                         <h2 class="project-title text-white">
@@ -321,7 +319,7 @@
                       </div>
                     </div>
                     <div
-                      class="col-6 d-flex flex-column justify-content-center align-items-stretch vh100col"
+                      class="col-12 col-md-6 d-flex flex-column justify-content-center align-items-stretch"
                     >
                       <video
                         autoplay
