@@ -11926,6 +11926,20 @@ video {
   color: white;
 }
 
+.vh-100 {
+  height: 100vh;
+}
+
+.mywork-title {
+  position: relative;
+  position: -webkit-relative;
+  /* Safari */
+  top: 15vh;
+  padding: 0% 10vw;
+  margin-bottom: 1%;
+  text-align: center;
+}
+
 @media (min-width: 1200px) {
   body {
     overflow: hidden;
