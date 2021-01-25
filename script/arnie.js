@@ -8,7 +8,8 @@ $("#mywork-carousel").on("slide.bs.carousel", function (e) {
 });
 
 //Toggle script mobile nav
-var el = document.querySelectorAll(".hamburger");
+let el = document.querySelectorAll(".hamburger");
+
 for (i = 0; i <= el.length; i++) {
   el[i].addEventListener(
     "click",

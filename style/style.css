@@ -11725,7 +11725,36 @@ fieldset:disabled .btn {
 }
 
 html {
+  height: -webkit-fill-available;
+}
+
+body {
+  overflow: hidden;
+  height: -webkit-fill-available;
+}
+
+.main-page {
+  overflow-y: scroll;
+  max-height: 100vh;
+  -ms-scroll-snap-type: y mandatory;
+      scroll-snap-type: y mandatory;
   scroll-behavior: smooth;
+  scroll-padding-top: 10vh;
+  min-height: 100vh;
+  /* mobile viewport bug fix */
+  min-height: -webkit-fill-available;
+}
+
+section {
+  scroll-snap-align: end;
+  height: calc(100vh - 10vh);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
 }
 
 
@@ -11750,6 +11779,7 @@ h1,
   text-transform: uppercase;
   background-color: #222831;
   position: fixed;
+  height: 10vh;
   width: 100%;
   z-index: 1021;
 }
@@ -11771,7 +11801,7 @@ h1,
 
 .navbar-collapse {
   background-color: #161c25;
-  margin-top: 2%;
+  margin-top: 0%;
 }
 
 .hamburger {
@@ -11858,7 +11888,7 @@ h1,
           transform: translateY(-0.4em) rotate(-135deg);
 }
 
-.what-i-do {
+.header-padding {
   padding-top: 10vh;
 }
 
@@ -11900,26 +11930,6 @@ h1,
   text-transform: uppercase;
   -webkit-text-stroke-width: 0px;
   -webkit-text-stroke-color: white;
-}
-
-.main-page {
-  overflow-y: scroll;
-  max-height: 100vh;
-  -ms-scroll-snap-type: y mandatory;
-      scroll-snap-type: y mandatory;
-  scroll-behavior: smooth;
-}
-
-section {
-  scroll-snap-align: start;
-  height: calc(100vh - 10vh);
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
 }
 
 .main-text {
@@ -11971,10 +11981,6 @@ a {
   font-size: 4.5vw;
 }
 
-.what-i-do {
-  background-color: #222831;
-}
-
 .grid {
   display: -ms-grid;
   display: grid;
@@ -12002,8 +12008,8 @@ a {
 }
 
 .brands-section {
-  padding-top: 25vh;
-  padding-bottom: 25vh;
+  padding-top: 20vh;
+  padding-bottom: 20vh;
 }
 
 .btn-link:hover {
@@ -12022,15 +12028,15 @@ a {
   font-size: 4.5vw;
 }
 
-.my-work {
+.dark-background {
   background-color: #222831;
-  height: calc(100vh - 10vh);
 }
 
 video {
   max-width: 100%;
-  margin-top: 6vh;
-  margin-bottom: -15vh;
+  margin-top: -3vh;
+  margin-bottom: -25vh;
+  max-height: 25vh;
 }
 
 .project-title {
@@ -12043,6 +12049,7 @@ video {
 .short-description {
   font-family: "ITC Avant Garde Gothic";
   font-size: 3vw;
+  padding-bottom: 2vh;
 }
 
 .main-text {
@@ -12053,6 +12060,7 @@ video {
   color: white;
   font-size: 4.5vw;
   line-height: 1.7em;
+  text-align: justify;
 }
 
 .vh-100 {
@@ -12069,18 +12077,82 @@ video {
   text-align: center;
 }
 
-.project-link {
-  padding-top: 2%;
-}
-
 a {
   color: white;
   text-decoration: underline;
 }
 
+.project-link {
+  padding-top: 2%;
+  text-decoration: none;
+}
+
 .carousel-control-next,
 .carousel-control-prev {
-  top: -30%;
+  top: -45%;
+}
+
+.contact-text {
+  text-align: justify;
+}
+
+.carousel-indicators {
+  margin-bottom: 2rem;
+}
+
+.footer {
+  background-color: #222831;
+  height: 10vh;
+}
+
+.footer h2, .footer .h2 {
+  color: white;
+  font-family: "Sofia";
+  font-size: 3vw;
+}
+
+.footer a {
+  text-decoration: none;
+  font-size: 5vw;
+}
+
+.footer .social-icon {
+  margin-right: 20px;
+}
+
+.contact-button-footer {
+  width: 10vw;
+  padding: 1vh;
+  -webkit-transition: background-color 0.5s ease;
+  transition: background-color 0.5s ease;
+}
+
+.contact-button-footer p,
+.contact-button-footer i {
+  -webkit-transition: color 0.5s ease;
+  transition: color 0.5s ease;
+  color: #222831;
+}
+
+.contact-button-footer:hover {
+  background-color: #222831;
+}
+
+.contact-button-footer:hover p,
+.contact-button-footer:hover i {
+  color: white;
+}
+
+.contact-button-footer:hover img {
+  fill: white;
+}
+
+.maxvw100 {
+  max-width: 100vw;
+}
+
+.footer {
+  width: 100vw;
 }
 
 @media (min-width: 1200px) {
@@ -12232,7 +12304,6 @@ a {
     font-weight: 400;
   }
   section {
-    scroll-snap-align: start;
     height: 100vh;
     display: -webkit-box;
     display: -ms-flexbox;
@@ -12362,9 +12433,6 @@ a {
   .footer {
     background-color: #222831;
     height: 10vh;
-  }
-  .getintouch {
-    height: calc(100vh - 10vh);
   }
   .footer h2, .footer .h2 {
     color: white;
