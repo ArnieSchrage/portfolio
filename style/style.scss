@@ -290,6 +290,8 @@ a {
 
 video {
   max-width: 100%;
+  margin-top: 6vh;
+  margin-bottom: -15vh;
 }
 
 .project-title {
@@ -335,7 +337,7 @@ a {
 
 .carousel-control-next,
 .carousel-control-prev {
-  top: -50%;
+  top: -30%;
 }
 ////////////////////////////////////////////////////////////////
 @include media-breakpoint-up(sm) {
