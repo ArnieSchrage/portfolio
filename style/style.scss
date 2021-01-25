@@ -186,7 +186,7 @@ h1 {
 .main-page {
   overflow-y: scroll;
   max-height: 100vh;
-  //scroll-snap-type: y mandatory;
+  scroll-snap-type: y mandatory;
   scroll-behavior: smooth;
 }
 section {
@@ -285,6 +285,7 @@ a {
 }
 .my-work {
   background-color: $dark-background;
+  height: 150vh;
 }
 
 video {
@@ -599,6 +600,7 @@ a {
 
   .my-work {
     background-color: $dark-background;
+    height: calc(100vh - #{$header-height});
   }
 
   .mockup-video {

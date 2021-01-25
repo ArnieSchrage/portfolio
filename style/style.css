@@ -11905,6 +11905,8 @@ h1,
 .main-page {
   overflow-y: scroll;
   max-height: 100vh;
+  -ms-scroll-snap-type: y mandatory;
+      scroll-snap-type: y mandatory;
   scroll-behavior: smooth;
 }
 
@@ -12022,6 +12024,7 @@ a {
 
 .my-work {
   background-color: #222831;
+  height: 150vh;
 }
 
 video {
@@ -12323,6 +12326,7 @@ a {
   }
   .my-work {
     background-color: #222831;
+    height: calc(100vh - 10vh);
   }
   .mockup-video {
     max-width: 100%;
