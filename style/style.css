@@ -11905,8 +11905,6 @@ h1,
 .main-page {
   overflow-y: scroll;
   max-height: 100vh;
-  -ms-scroll-snap-type: y mandatory;
-      scroll-snap-type: y mandatory;
   scroll-behavior: smooth;
 }
 
@@ -12066,6 +12064,11 @@ video {
 a {
   color: white;
   text-decoration: underline;
+}
+
+.carousel-control-next,
+.carousel-control-prev {
+  top: -50%;
 }
 
 @media (min-width: 1200px) {
