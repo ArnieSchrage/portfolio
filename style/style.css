@@ -12024,7 +12024,7 @@ a {
 
 .my-work {
   background-color: #222831;
-  height: 150vh;
+  height: calc(100vh - 10vh);
 }
 
 video {
@@ -12033,17 +12033,24 @@ video {
 
 .project-title {
   font-family: "ITC Avant Garde Gothic";
-  font-size: 6vw;
+  font-size: 5.5vw;
   font-weight: 500;
-  padding-bottom: 2.5%;
+  padding-bottom: 0%;
 }
 
 .short-description {
   font-family: "ITC Avant Garde Gothic";
+  font-size: 3vw;
+}
+
+.main-text {
+  line-height: 1.7em;
 }
 
 .main-text-light {
   color: white;
+  font-size: 4.5vw;
+  line-height: 1.7em;
 }
 
 .vh-100 {
