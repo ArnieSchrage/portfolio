@@ -11724,6 +11724,10 @@ fieldset:disabled .btn {
   }
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 
 h1,
 .h1 {
