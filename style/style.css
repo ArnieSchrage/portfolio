@@ -11908,7 +11908,7 @@ h1,
 
 section {
   scroll-snap-align: start;
-  height: 100vh;
+  height: calc(100vh - 10vh);
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;

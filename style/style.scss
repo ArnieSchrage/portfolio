@@ -187,7 +187,7 @@ h1 {
 }
 section {
   scroll-snap-align: start;
-  height: 100vh;
+  height: calc(100vh - #{$header-height});
   display: flex;
   flex-direction: row;
 }
