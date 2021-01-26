@@ -43,6 +43,14 @@ h1 {
   font-weight: 500;
   color: $font-color;
 }
+.blurred {
+  filter: blur(0.8rem);
+  transition: all 0.5 ease-in-out;
+  opacity: 0.8;
+  height: 100vh;
+  width: 100vw;
+  overflow-y: hidden;
+}
 
 .xs-padding {
   padding: 0% 3vw;
