@@ -2,7 +2,7 @@
 @import "fonts";
 @import "bootstrap/scss/bootstrap";
 
-$header-height: 10vh;
+$header-height: 8vh;
 $title-font: "ITC Avant Garde Gothic";
 $text-font: "Sofia";
 $font-color: #222831;
@@ -15,28 +15,45 @@ $regular-color: #00adb5;
 $power-color: #00fff5;
 
 //// XS style (< 576px)
-html {
-  height: -webkit-fill-available;
+//Mobile browser 100vh fixes //
+
+:root {
+  --app-height: 100%;
 }
+
+main {
+  padding: 0;
+  margin: 0;
+  width: 100vw;
+  height: 100vh;
+  height: var(--app-height);
+}
+
+html {
+  overflow: hidden;
+}
+
 body {
   overflow: hidden;
-  height: -webkit-fill-available;
 }
 .main-page {
   overflow-y: scroll;
-  max-height: 100vh;
   scroll-snap-type: y mandatory;
   scroll-behavior: smooth;
-  scroll-padding-top: $header-height;
-  min-height: 100vh;
-  /* mobile viewport bug fix */
-  min-height: -webkit-fill-available;
+  scroll-padding-top: 55px;
 }
 section {
-  scroll-snap-align: end;
-  height: calc(100vh - #{$header-height});
+  scroll-snap-align: start;
+  height: calc(100% - 55px);
   display: flex;
   flex-direction: row;
+}
+
+#landing-page {
+  height: 100%;
+}
+#get-in-touch {
+  height: 100%;
 }
 h1 {
   font-family: $title-font;
@@ -44,28 +61,27 @@ h1 {
   color: $font-color;
 }
 .blurred {
-  filter: blur(0.8rem);
-  transition: all 0.5 ease-in-out;
-  opacity: 0.8;
-  height: 100vh;
-  width: 100vw;
-  overflow-y: hidden;
+  filter: blur(0.2rem);
+  height: 100%;
+  width: 100%;
 }
 
 .xs-padding {
   padding: 0% 3vw;
 }
 .main-title {
-  font-size: 15vw;
+  font-size: 10vw;
 }
 .main-nav {
   font-family: $title-font;
   font-size: 4vw;
   text-transform: uppercase;
+  position: fixed;
+  top: 0;
 
   background-color: $dark-background;
-  position: fixed;
-  height: $header-height;
+
+  //height: 10%;
   width: 100%;
   z-index: 1021;
 }
@@ -86,8 +102,6 @@ h1 {
 
 .navbar-collapse {
   background-color: #161c25;
-
-  margin-top: 0%;
 }
 
 // START Toggle icon CSS
@@ -278,8 +292,9 @@ a {
   color: $regular-color;
 }
 .brands-section {
-  padding-top: 20vh;
-  padding-bottom: 20vh;
+  padding-top: 20%;
+  padding-bottom: 20%;
+  max-height: 100%;
 }
 
 .btn-link:hover {
@@ -334,12 +349,7 @@ video {
 }
 
 .mywork-title {
-  position: relative;
-  position: -webkit-relative; /* Safari */
-  top: 15vh;
-  padding: 0% 10vw;
-  margin-bottom: 1%;
-  text-align: center;
+  padding-top: 3%;
 }
 
 a {
@@ -366,7 +376,7 @@ a {
 
 .footer {
   background-color: #222831;
-  height: $footer-height;
+  height: 15%;
 }
 
 .footer h2 {

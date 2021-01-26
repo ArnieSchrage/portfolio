@@ -11724,30 +11724,37 @@ fieldset:disabled .btn {
   }
 }
 
+:root {
+  --app-height: 100%;
+}
+
+main {
+  padding: 0;
+  margin: 0;
+  width: 100vw;
+  height: 100vh;
+  height: var(--app-height);
+}
+
 html {
-  height: -webkit-fill-available;
+  overflow: hidden;
 }
 
 body {
   overflow: hidden;
-  height: -webkit-fill-available;
 }
 
 .main-page {
   overflow-y: scroll;
-  max-height: 100vh;
   -ms-scroll-snap-type: y mandatory;
       scroll-snap-type: y mandatory;
   scroll-behavior: smooth;
-  scroll-padding-top: 10vh;
-  min-height: 100vh;
-  /* mobile viewport bug fix */
-  min-height: -webkit-fill-available;
+  scroll-padding-top: 55px;
 }
 
 section {
-  scroll-snap-align: end;
-  height: calc(100vh - 10vh);
+  scroll-snap-align: start;
+  height: calc(100% - 55px);
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -11755,6 +11762,14 @@ section {
   -webkit-box-direction: normal;
       -ms-flex-direction: row;
           flex-direction: row;
+}
+
+#landing-page {
+  height: 100%;
+}
+
+#get-in-touch {
+  height: 100%;
 }
 
 
@@ -11766,14 +11781,10 @@ h1,
 }
 
 .blurred {
-  -webkit-filter: blur(0.8rem);
-          filter: blur(0.8rem);
-  -webkit-transition: all 0.5 ease-in-out;
-  transition: all 0.5 ease-in-out;
-  opacity: 0.8;
-  height: 100vh;
-  width: 100vw;
-  overflow-y: hidden;
+  -webkit-filter: blur(0.2rem);
+          filter: blur(0.2rem);
+  height: 100%;
+  width: 100%;
 }
 
 .xs-padding {
@@ -11781,16 +11792,16 @@ h1,
 }
 
 .main-title {
-  font-size: 15vw;
+  font-size: 10vw;
 }
 
 .main-nav {
   font-family: "ITC Avant Garde Gothic";
   font-size: 4vw;
   text-transform: uppercase;
-  background-color: #222831;
   position: fixed;
-  height: 10vh;
+  top: 0;
+  background-color: #222831;
   width: 100%;
   z-index: 1021;
 }
@@ -11812,7 +11823,6 @@ h1,
 
 .navbar-collapse {
   background-color: #161c25;
-  margin-top: 0%;
 }
 
 .hamburger {
@@ -11900,11 +11910,11 @@ h1,
 }
 
 .header-padding {
-  padding-top: 10vh;
+  padding-top: 8vh;
 }
 
 .landing-page {
-  padding-top: 10vh;
+  padding-top: 8vh;
 }
 
 .landing-title {
@@ -12019,8 +12029,9 @@ a {
 }
 
 .brands-section {
-  padding-top: 20vh;
-  padding-bottom: 20vh;
+  padding-top: 20%;
+  padding-bottom: 20%;
+  max-height: 100%;
 }
 
 .btn-link:hover {
@@ -12079,13 +12090,7 @@ video {
 }
 
 .mywork-title {
-  position: relative;
-  position: -webkit-relative;
-  /* Safari */
-  top: 15vh;
-  padding: 0% 10vw;
-  margin-bottom: 1%;
-  text-align: center;
+  padding-top: 3%;
 }
 
 a {
@@ -12113,7 +12118,7 @@ a {
 
 .footer {
   background-color: #222831;
-  height: 10vh;
+  height: 15%;
 }
 
 .footer h2, .footer .h2 {
@@ -12417,7 +12422,7 @@ a {
   }
   .my-work {
     background-color: #222831;
-    height: calc(100vh - 10vh);
+    height: calc(100vh - 8vh);
   }
   .mockup-video {
     max-width: 100%;
