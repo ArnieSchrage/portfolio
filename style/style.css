@@ -12297,24 +12297,41 @@ a {
     height: 100vh;
   }
   .footer {
-    max-width: 100%;
-    height: 10vh;
+    height: 7.5vh;
     padding: 0;
+    width: 100vw;
+    -ms-flex-item-align: center;
+        -ms-grid-row-align: center;
+        align-self: center;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
   }
   .footer h2, .footer .h2 {
-    font-size: 1vw;
+    font-size: 0.7vw;
   }
   .footer a {
     font-size: 1vw;
   }
   .footer div.row {
     max-width: 100%;
+    padding: 0;
+    margin: 0;
   }
   .getintouch div.row {
     max-width: 100%;
   }
   .project-title {
     font-size: 2.3vw;
+  }
+  .mix-this {
+    color: white;
+    mix-blend-mode: difference;
+  }
+  .socials {
+    padding: 0;
+  }
+  .social-icon {
+    color: white;
   }
   /*
   h1 {
@@ -12414,10 +12431,7 @@ a {
     font-weight: 400;
   }
 
-  .mix-this {
-    color: white;
-    mix-blend-mode: difference;
-  }
+ 
   .fixed {
     position: fixed;
     mix-blend-mode: difference;
