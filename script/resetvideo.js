@@ -11,4 +11,6 @@ window.onload = function () {
 
 $(".navbar-nav>li>a").on("click", function () {
   $(".navbar-collapse").collapse("hide");
+  $(".hamburger").toggleClass("active");
+  $(".main-page").toggleClass("blurred");
 });

@@ -58,11 +58,15 @@ h1 {
   font-weight: 500;
   color: $font-color;
 }
-.blurred {
-  filter: blur(0.2rem);
+/*.blurred {
+  filter: blur(0.4rem);
+
   height: 100%;
   width: 100%;
+  position: fixed;
+  transition: all 0.5s ease;
 }
+*/
 
 .xs-padding {
   padding: 0% 3vw;
@@ -100,6 +104,10 @@ h1 {
 
 .navbar-collapse {
   background-color: #161c25;
+}
+
+.getintouch .landing-title {
+  padding-top: 20%;
 }
 
 // START Toggle icon CSS
