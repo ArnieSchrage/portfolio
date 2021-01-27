@@ -60,13 +60,13 @@
           <div class="collapse navbar-collapse" id="navbarNav">
             <ul class="navbar-nav">
               <li class="nav-item">
-                <a class="nav-link mix-this" href="#what-i-do">What i do.</a>
+                <a href="#what-i-do" class="nav-link mix-this">What i do.</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link mix-this" href="#my-work">My work.</a>
+                <a href="#my-work" class="nav-link mix-this">My work.</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link mix-this" href="#get-in-touch"
+                <a href="#get-in-touch" class="nav-link mix-this"
                   >Get in touch.</a
                 >
               </li>
@@ -274,9 +274,6 @@
         id="my-work"
       >
         <div class="row">
-          <h1 class="main-title mywork-title text-white text-center">
-            <span class="outline-text-white">My </span>work.
-          </h1>
           <div
             id="mywork-carousel"
             class="carousel slide"
@@ -297,9 +294,9 @@
             <div class="carousel-inner">
               <div class="carousel-item active">
                 <div class="container-fluid">
-                  <div class="row d-flex vh-100">
+                  <div class="row d-flex vh-100-desktop">
                     <div
-                      class="order-1 order-md-0 col-12 col-md-6 d-flex flex-column justify-content-md-center justify-content-evenly align-items-center align-items-md-stretch"
+                      class="order-1 order-md-0 col-12 col-md-6 d-flex flex-column justify-content-md-center align-items-center align-items-md-stretch"
                     >
                       <div class="project-details">
                         <a
@@ -316,10 +313,10 @@
                         </h3>
                         <p class="main-text-light">
                           Luxury furniture brand Eichholtz is expanding to The
-                          Netherlands, and one of their representatives
-                          contacted us to build a webshop containing more than
-                          3000 products. We've built a custom WooCommerce shop
-                          that reflects their branding and tone of voice.
+                          Netherlands, and asked us to build a webshop
+                          containing more than 3000 products. We've built a
+                          custom WooCommerce shop that reflects their branding
+                          and tone of voice.
                         </p>
                       </div>
                     </div>
@@ -347,7 +344,7 @@
               </div>
               <div class="carousel-item">
                 <div class="container-fluid">
-                  <div class="row d-flex vh-100">
+                  <div class="row d-flex vh-100-desktop">
                     <div
                       class="order-1 order-md-0 col-12 col-md-6 d-flex flex-column justify-content-md-center justify-content-evenly align-items-center align-items-md-stretch"
                     >
@@ -397,7 +394,7 @@
 
               <div class="carousel-item">
                 <div class="container-fluid">
-                  <div class="row d-flex vh-100">
+                  <div class="row d-flex vh-100-desktop">
                     <div
                       class="order-1 order-md-0 col-12 col-md-6 d-flex flex-column justify-content-md-center justify-content-evenly align-items-center align-items-md-stretch"
                     >
@@ -448,7 +445,7 @@
               </div>
               <div class="carousel-item">
                 <div class="container-fluid">
-                  <div class="row d-flex vh-100">
+                  <div class="row d-flex vh-100-desktop">
                     <div
                       class="order-1 order-md-0 col-12 col-md-6 d-flex flex-column justify-content-md-center justify-content-evenly align-items-center align-items-md-stretch"
                     >
@@ -467,12 +464,11 @@
                         </h3>
                         <p class="main-text-light">
                           Career development means getting to know your clients.
-                          Selmani requested a clear and informative website
-                          which shows their process in great detail. In addition
-                          to this, we developed an intake survey app that
-                          provides Selmani's visitors carreer-advice. This
-                          interactive element touched the core goal of Selmani
-                          Work Solutions.
+                          SWS requested a clear and informative website which
+                          shows their process in great detail. In addition to
+                          this, we developed an intake survey app that provides
+                          Selmani's visitors carreer-advice. This interactive
+                          element touched the core goal of SWS.
                         </p>
                       </div>
                     </div>
@@ -498,7 +494,7 @@
               </div>
               <div class="carousel-item">
                 <div class="container-fluid">
-                  <div class="row d-flex vh-100">
+                  <div class="row d-flex vh-100-desktop">
                     <div
                       class="order-1 order-md-0 col-12 col-md-6 d-flex flex-column justify-content-md-center justify-content-evenly align-items-center align-items-md-stretch"
                     >
@@ -587,14 +583,18 @@
               want to know more about what i can do for your business / project.
               I won't bite...
             </p>
+            <a
+              href="mailto:hello@arnieschrage.nl"
+              class="address main-text text-center"
+              >hello@arnieschrage.nl</a
+            >
 
-            <footer class="footer align-self-end">
-              <div class="row g-0 d-flex">
+            <footer class="footer align-self-end d-flex">
+              <div class="row g-0">
                 <div class="col-12 align-items-center text-center">
                   <h2>© Copyright 2021 - Arnie Schrage</h2>
                 </div>
-              </div>
-              <div class="row g-0 d-flex">
+
                 <div class="col-12 align-items-center text-center">
                   <div class="socials">
                     <a
@@ -623,9 +623,6 @@
       integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
       crossorigin="anonymous"
     ></script>
-    <script src="script/checkhevcsupport.js"></script>
-    <script src="script/resetvideo.js"></script>
-    <script src="script/mobilefullheight.js"></script>
 
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js"
@@ -639,6 +636,9 @@
     ></script>
 
     <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
+    <script src="script/checkhevcsupport.js"></script>
+    <script src="script/resetvideo.js"></script>
+    <script src="script/mobilefullheight.js"></script>
     <script src="script/toggle.js"></script>
   </body>
 </html>

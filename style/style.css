@@ -11768,10 +11768,6 @@ section {
   height: 100%;
 }
 
-#get-in-touch {
-  height: 100%;
-}
-
 
 h1,
 .h1 {
@@ -11960,6 +11956,11 @@ h1,
   text-align: justify;
 }
 
+.address {
+  font-family: "Sofia";
+  color: #222831;
+}
+
 p,
 a {
   font-family: "Sofia";
@@ -12056,9 +12057,7 @@ a {
 
 video {
   max-width: 100%;
-  margin-top: -3vh;
-  margin-bottom: -25vh;
-  max-height: 25vh;
+  max-height: 75%;
 }
 
 .project-title {
@@ -12083,10 +12082,6 @@ video {
   font-size: 4.5vw;
   line-height: 1.7em;
   text-align: justify;
-}
-
-.vh-100 {
-  height: 100vh;
 }
 
 .mywork-title {
@@ -12118,7 +12113,16 @@ a {
 
 .footer {
   background-color: #222831;
-  height: 15%;
+  height: 12%;
+}
+
+.footer div.row {
+  width: 100vw;
+  padding-top: 3%;
+}
+
+.socials {
+  padding-bottom: 3%;
 }
 
 .footer h2, .footer .h2 {
@@ -12433,8 +12437,8 @@ a {
     top: 20%;
   }
   .carousel {
-    height: 90vh;
-    margin-top: 10vh;
+    height: 90%;
+    margin-top: 10%;
   }
   .carousel-item {
     padding-top: 10vh;
