@@ -40,7 +40,9 @@
   </head>
   <body>
     <header>
-      <nav class="main-nav navbar navbar-expand-md sticky-top">
+      <nav
+        class="main-nav navbar navbar-expand-md sticky-top mix-this page-padding"
+      >
         <div class="container-fluid g-0">
           <a class="navbar-brand mix-this" href="#landing-page"
             ><span class="arnie-logo">Arnie</span
@@ -57,7 +59,10 @@
           >
             <span class="navbar-toggler-icon icon"> </span>
           </button>
-          <div class="collapse navbar-collapse" id="navbarNav">
+          <div
+            class="collapse navbar-collapse justify-content-md-end"
+            id="navbarNav"
+          >
             <ul class="navbar-nav">
               <li class="nav-item">
                 <a href="#what-i-do" class="nav-link mix-this">What i do.</a>
@@ -76,7 +81,10 @@
       </nav>
     </header>
     <main class="main-page">
-      <section class="container-fluid page-padding sect" id="landing-page">
+      <section
+        class="container-fluid d-flex page-padding white-background sect"
+        id="landing-page"
+      >
         <div class="row d-flex">
           <div class="col-md-6 col-12 order-md-0 order-1 align-self-md-center">
             <h1 class="landing-title xs-padding">
@@ -120,16 +128,20 @@
         </div>
       </section>
       <section
-        class="container-fluid page-padding dark-background sect"
+        class="container-fluid d-flex page-padding dark-background sect"
         id="what-i-do"
       >
         <div class="row">
-          <div class="col-12 col-md-6 align-self-center text-center">
+          <div
+            class="col-12 col-md-5 align-self-center text-center text-md-start"
+          >
             <h1 class="main-title text-white">
               <span class="outline-text-white"> What i </span>do.
             </h1>
           </div>
-          <div class="col-12 col-md-6 align-self-md-center text-center">
+          <div
+            class="col-12 col-md-7 align-self-md-center text-center text-md-start"
+          >
             <div id="accordion">
               <div class="card">
                 <div class="card-header" id="headingOne">
@@ -251,7 +263,7 @@
         </div>
       </section>
       <section
-        class="brands-section container-fluid page-padding brands-padding sect"
+        class="brands-section container-fluid d-flex page-padding white-background brands-padding sect"
       >
         <div class="grid">
           <i class="fab fa-html5"><p class="icon-desc">HTML5</p></i>
@@ -265,7 +277,7 @@
           <i class="fab fa-vuejs"><p class="icon-desc">VueJS</p></i>
         </div>
       </section>
-      s
+
       <section
         class="container-fluid my-work dark-background sect"
         id="my-work"
@@ -567,13 +579,11 @@
         </div>
       </section>
       <section
-        class="container-fluid getintouch sect page-padding"
+        class="container-fluid getintouch sect white-background"
         id="get-in-touch"
       >
-        <div class="row">
-          <div
-            class="col-12 d-flex flex-column flex-nowrap justify-content-between g-0"
-          >
+        <div class="row d-flex">
+          <div class="col-12 col-md-12">
             <h1 class="landing-title text-center">
               <span class="outline-text-black weight400">Let's get</span> in
               touch.
@@ -583,38 +593,33 @@
               want to know more about what i can do for your business / project.
               I won't bite...
             </p>
-            <a
-              href="mailto:hello@arnieschrage.nl"
-              class="address main-text text-center"
+
+            <a href="mailto:hello@arnieschrage.nl" class="address main-text"
               >hello@arnieschrage.nl</a
             >
 
-            <footer class="footer d-flex">
-              <div class="row d-flex g-0">
-                <div
-                  class="col-12 col-md-6 align-items-center align-self-md-center text-center"
-                >
-                  <h2>© Copyright 2021 - Arnie Schrage</h2>
-                </div>
+            <a href="//linkedin.com/in/arnie-schrage" class="address main-text"
+              >LinkedIn</a
+            >
+          </div>
 
-                <div
-                  class="col-12 col-md-6 align-items-center align-self-md-center text-center"
-                >
-                  <div class="socials">
-                    <a
-                      href="//linkedin.com/in/arnie-schrage"
-                      target="_blank"
-                      class="social-icon"
-                      ><i class="fab fa-linkedin"></i
-                    ></a>
-                    <a
-                      href="//github.com/ArnieSchrage"
-                      target="_blank"
-                      class="social-icon"
-                      ><i class="fab fa-github"></i
-                    ></a>
-                  </div>
-                </div>
+          <div class="col-md-12">
+            <footer class="footer">
+              <h2>© Copyright 2021 - Arnie Schrage</h2>
+
+              <div class="socials">
+                <a
+                  href="//linkedin.com/in/arnie-schrage"
+                  target="_blank"
+                  class="social-icon"
+                  ><i class="fab fa-linkedin"></i
+                ></a>
+                <a
+                  href="//github.com/ArnieSchrage"
+                  target="_blank"
+                  class="social-icon"
+                  ><i class="fab fa-github"></i
+                ></a>
               </div>
             </footer>
           </div>
