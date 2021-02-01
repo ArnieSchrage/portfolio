@@ -38,6 +38,28 @@ html {
 body {
   overflow: hidden;
 }
+.btn-primary {
+  background-color: $dark-background;
+  border: none;
+  font-family: $text-font;
+}
+
+.btn-primary:active,
+.btn-primary:hover,
+.btn-primary:visited,
+.btn-primary:focus {
+  background-color: $regular-color;
+  color: $white;
+}
+
+a:hover {
+  color: $regular-color;
+}
+.form-label,
+.form-control {
+  font-family: $text-font;
+}
+
 .main-page {
   overflow-y: scroll;
   scroll-snap-type: y mandatory;
@@ -206,7 +228,7 @@ h1 {
   padding-top: $header-height;
 }
 .landing-title {
-  font-size: 15vw;
+  font-size: 12vw;
   font-weight: 700;
 }
 
@@ -384,6 +406,8 @@ a {
 .contact-text {
   text-align: justify;
   padding-bottom: 10%;
+  width: 90%;
+  margin: 0 auto;
 }
 
 .carousel-indicators {
@@ -448,7 +472,7 @@ a {
 }
 
 .address {
-  font-size: 7vw;
+  font-size: 20px;
   display: block;
   text-align: center;
   text-decoration: none;
@@ -499,6 +523,17 @@ a {
   .carousel-control-prev {
     top: 0;
     width: 4%;
+  }
+  .footer h2 {
+    font-size: 18px;
+  }
+  .contact-text {
+    width: 80%;
+    margin: 0 auto;
+  }
+  .footer a {
+    text-decoration: none;
+    font-size: 2.5vw;
   }
 }
 @include media-breakpoint-up(lg) {
@@ -566,6 +601,10 @@ a {
   }
   .landing-title {
     font-size: 6vw;
+  }
+  .contact-text {
+    width: 60%;
+    margin: 0 auto;
   }
 }
 @include media-breakpoint-up(xl) {
@@ -682,6 +721,7 @@ a {
   }
   .xs-padding {
     padding: 0;
+    padding-bottom: 3%;
   }
   .footer {
     height: 7.5vh;
@@ -729,12 +769,16 @@ a {
   }
 }
 .getintouch .landing-title {
-  padding-bottom: 5%;
+  padding-bottom: 2%;
 }
 
 @include media-breakpoint-up(xxl) {
   .main-text,
   .main-text-light {
     font-size: 1vw;
+  }
+  .email-form {
+    max-width: 60%;
+    margin: 0 auto;
   }
 }

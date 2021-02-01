@@ -11744,6 +11744,29 @@ body {
   overflow: hidden;
 }
 
+.btn-primary {
+  background-color: #222831;
+  border: none;
+  font-family: "Sofia";
+}
+
+.btn-primary:active,
+.btn-primary:hover,
+.btn-primary:visited,
+.btn-primary:focus {
+  background-color: #00adb5;
+  color: #fff;
+}
+
+a:hover {
+  color: #00adb5;
+}
+
+.form-label,
+.form-control {
+  font-family: "Sofia";
+}
+
 .main-page {
   overflow-y: scroll;
   -ms-scroll-snap-type: y mandatory;
@@ -11924,7 +11947,7 @@ h1,
 }
 
 .landing-title {
-  font-size: 15vw;
+  font-size: 12vw;
   font-weight: 700;
 }
 
@@ -12118,6 +12141,8 @@ a {
 .contact-text {
   text-align: justify;
   padding-bottom: 10%;
+  width: 90%;
+  margin: 0 auto;
 }
 
 .carousel-indicators {
@@ -12186,7 +12211,7 @@ a {
 }
 
 .address {
-  font-size: 7vw;
+  font-size: 20px;
   display: block;
   text-align: center;
   text-decoration: none;
@@ -12238,6 +12263,17 @@ a {
   .carousel-control-prev {
     top: 0;
     width: 4%;
+  }
+  .footer h2, .footer .h2 {
+    font-size: 18px;
+  }
+  .contact-text {
+    width: 80%;
+    margin: 0 auto;
+  }
+  .footer a {
+    text-decoration: none;
+    font-size: 2.5vw;
   }
 }
 
@@ -12302,6 +12338,10 @@ a {
   }
   .landing-title {
     font-size: 6vw;
+  }
+  .contact-text {
+    width: 60%;
+    margin: 0 auto;
   }
 }
 
@@ -12402,6 +12442,7 @@ a {
   }
   .xs-padding {
     padding: 0;
+    padding-bottom: 3%;
   }
   .footer {
     height: 7.5vh;
@@ -12443,13 +12484,17 @@ a {
 }
 
 .getintouch .landing-title {
-  padding-bottom: 5%;
+  padding-bottom: 2%;
 }
 
 @media (min-width: 1400px) {
   .main-text,
   .main-text-light {
     font-size: 1vw;
+  }
+  .email-form {
+    max-width: 60%;
+    margin: 0 auto;
   }
 }
 /*# sourceMappingURL=style.css.map */
