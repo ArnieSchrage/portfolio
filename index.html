@@ -88,10 +88,11 @@
         <div class="row d-flex">
           <div class="col-lg-6 col-12 order-lg-0 order-1 align-self-lg-center">
             <h1 class="landing-title xs-padding">
-              <span class="outline-text-black nice-to">Nice to</span>
-              <br />meet you.
+              <span class="outline-text-black nice-to weight400">Nice to</span>
+              <br />
+              <span class="meet-you"><b> meet you.</b></span>
             </h1>
-            <p class="main-text landing-text xs-padding">
+            <p class="main-text landing-text">
               My name is Arnie, a digital creator with a focus on user centric
               design. I develop the seamless user experience that your project
               needs in order to reach your targeted goals.
@@ -593,25 +594,40 @@
               want to know more about what i can do for your business / project.
               I won't bite...
             </p>
-            <div class="email-form">
+
+            <form
+              class="contact-form"
+              id="contact-form"
+              method="post"
+              action="contact.php"
+              role="form"
+            >
               <div class="mb-3">
-                <label for="exampleFormControlInput1" class="form-label"
+                <label
+                  for="emailInput"
+                  class="form-label"
+                  required="required"
+                  data-error="Valid email is required."
                   >Email address</label
                 >
                 <input
                   type="email"
                   class="form-control"
-                  id="exampleFormControlInput1"
+                  id="emailInput"
                   placeholder="name@example.com"
                 />
               </div>
               <div class="mb-3">
-                <label for="exampleFormControlTextarea1" class="form-label"
+                <label
+                  for="textArea"
+                  class="form-label"
+                  required="required"
+                  data-error="Please enter your message."
                   >Your message</label
                 >
                 <textarea
                   class="form-control"
-                  id="exampleFormControlTextarea1"
+                  id="textArea"
                   rows="3"
                 ></textarea>
               </div>
@@ -620,7 +636,7 @@
                   Send message
                 </button>
               </div>
-            </div>
+            </form>
 
             <a
               href="mailto:hello@arnieschrage.nl"

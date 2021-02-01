@@ -23,6 +23,11 @@ $desktop-text-fs: 1vw;
   --app-height: 100%;
 }
 
+p {
+  font-family: $text-font;
+  font-size: 4.5vw;
+  color: $font-color;
+}
 main {
   padding: 0;
   margin: 0;
@@ -273,16 +278,13 @@ h1 {
   color: $dark-background;
   font-weight: 700;
 }
-p,
-a {
-  font-family: $text-font;
-  font-size: 4.5vw;
-  color: $font-color;
-}
-.nice-to {
-  font-weight: 500;
-}
 
+.nice-to {
+  font-weight: 400;
+}
+.meet-you {
+  font-weight: 900;
+}
 .contact-button {
   display: none;
 }
@@ -535,6 +537,9 @@ a {
     text-decoration: none;
     font-size: 2.5vw;
   }
+  .landing-text {
+    padding: 0 5%;
+  }
 }
 @include media-breakpoint-up(lg) {
   .white-background {
@@ -671,8 +676,7 @@ a {
     min-width: 100%;
   }
 
-  p,
-  a {
+  p {
     font-family: $text-font;
     font-size: 1vw;
     color: $font-color;

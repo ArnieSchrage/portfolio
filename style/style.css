@@ -11728,6 +11728,12 @@ fieldset:disabled .btn {
   --app-height: 100%;
 }
 
+p {
+  font-family: "Sofia";
+  font-size: 4.5vw;
+  color: #222831;
+}
+
 main {
   padding: 0;
   margin: 0;
@@ -11995,15 +12001,12 @@ h1,
   font-weight: 700;
 }
 
-p,
-a {
-  font-family: "Sofia";
-  font-size: 4.5vw;
-  color: #222831;
+.nice-to {
+  font-weight: 400;
 }
 
-.nice-to {
-  font-weight: 500;
+.meet-you {
+  font-weight: 900;
 }
 
 .contact-button {
@@ -12275,6 +12278,9 @@ a {
     text-decoration: none;
     font-size: 2.5vw;
   }
+  .landing-text {
+    padding: 0 5%;
+  }
 }
 
 @media (min-width: 992px) {
@@ -12398,8 +12404,7 @@ a {
   #what-i-do > div.row {
     min-width: 100%;
   }
-  p,
-  a {
+  p {
     font-family: "Sofia";
     font-size: 1vw;
     color: #222831;
