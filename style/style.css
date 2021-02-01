@@ -11953,9 +11953,9 @@ h1,
 .schrage-logo {
   font-family: "ITC Avant Garde Gothic";
   font-weight: 300;
-  color: white;
+  color: transparent;
   text-transform: uppercase;
-  -webkit-text-stroke-width: 0px;
+  -webkit-text-stroke-width: 1px;
   -webkit-text-stroke-color: white;
 }
 
@@ -11970,7 +11970,6 @@ h1,
   font-family: "Sofia";
   color: #222831;
   font-weight: 700;
-  font-size: 1.3vw;
 }
 
 p,
@@ -12118,6 +12117,7 @@ a {
 
 .contact-text {
   text-align: justify;
+  padding-bottom: 10%;
 }
 
 .carousel-indicators {
@@ -12126,17 +12126,19 @@ a {
 
 .footer {
   background-color: #222831;
-  height: 12%;
+  padding: 3% 0;
 }
 
-.socials {
-  padding-bottom: 3%;
+.socials a {
+  text-align: center;
+  padding: 0% 5%;
 }
 
 .footer h2, .footer .h2 {
   color: white;
   font-family: "Sofia";
   font-size: 3vw;
+  text-align: center;
 }
 
 .footer a {
@@ -12175,16 +12177,140 @@ a {
   max-width: 100vw;
 }
 
+.carousel-inner {
+  height: 90vh;
+}
+
+#get-in-touch > div.row {
+  height: 100%;
+}
+
+.address {
+  font-size: 7vw;
+  display: block;
+  text-align: center;
+  text-decoration: none;
+}
+
+.getintouch .landing-title {
+  padding: 20% 0;
+}
+
+.navbar-nav .nav-link {
+  padding: 5% 0;
+}
+
+@media (min-width: 576px) {
+  lottie-player {
+    max-width: 75vw;
+    margin: 0 auto;
+  }
+  .main-text,
+  .main-text-light {
+    font-size: 26px;
+  }
+  .nav-item a {
+    font-size: 24px;
+  }
+}
+
+@media (min-width: 768px) {
+  lottie-player {
+    max-width: 60vw;
+  }
+  .main-text,
+  .main-text-light {
+    font-size: 20px;
+  }
+  .landing-title {
+    font-size: 10vw;
+  }
+  .accordion-title {
+    font-size: 3.5vw;
+  }
+  .icon-desc {
+    font-size: 2.5vw;
+  }
+  .vh-100-desktop {
+    height: 100vh;
+  }
+  .carousel-control-next,
+  .carousel-control-prev {
+    top: 0;
+    width: 4%;
+  }
+}
+
+@media (min-width: 992px) {
+  .white-background {
+    background-color: white;
+  }
+  .btn-link {
+    text-align: left;
+  }
+  .main-nav {
+    background-color: transparent;
+    height: 8vh;
+  }
+  .main-text,
+  .main-text-light {
+    font-size: 1.5vw;
+  }
+  .main-page {
+    scroll-padding-top: 0;
+    max-width: 100vw;
+  }
+  section {
+    height: calc(100vh);
+  }
+  .navbar-brand {
+    font-size: 2vw;
+    padding-left: 0;
+  }
+  .navbar-collapse {
+    background-color: transparent;
+  }
+  .mix-this {
+    mix-blend-mode: difference;
+  }
+  header {
+    background: white;
+    position: relative;
+    width: 100vw;
+  }
+  .page-padding {
+    padding: 0% 10vw;
+  }
+  .md-padding {
+    padding: 0 18vw;
+  }
+  .nav-item a {
+    font-size: 1.5vw;
+    color: white;
+    mix-blend-mode: difference;
+  }
+  .arnie-logo {
+    color: white;
+  }
+  .schrage-logo {
+    -webkit-text-stroke-width: 0.5px;
+    -webkit-text-stroke-color: white;
+    color: transparent;
+  }
+  .navbar-collapse {
+    background-color: initial;
+  }
+  .landing-title {
+    font-size: 6vw;
+  }
+}
+
 @media (min-width: 1200px) {
   body {
     overflow: hidden;
   }
   .white-background {
     background-color: white;
-  }
-  .main-page {
-    scroll-padding-top: 0;
-    max-width: 100vw;
   }
   section {
     height: calc(100vh);
@@ -12229,6 +12355,9 @@ a {
     font-size: 5vw;
     font-weight: 600;
   }
+  #what-i-do > div.row {
+    min-width: 100%;
+  }
   p,
   a {
     font-family: "Sofia";
@@ -12265,9 +12394,6 @@ a {
   .short-description {
     font-size: 1.5vw;
   }
-  .main-text-light {
-    font-size: 1vw;
-  }
   .carousel-item {
     padding: 0% 8vw;
   }
@@ -12282,7 +12408,8 @@ a {
     padding: 0;
   }
   .footer h2, .footer .h2 {
-    font-size: 0.7vw;
+    font-size: 16px;
+    padding-top: 1%;
   }
   .footer a {
     font-size: 1vw;
@@ -12304,315 +12431,25 @@ a {
   .social-icon {
     color: white;
   }
-  /*
-  h1 {
-    font-family: $title-font;
-    font-weight: 500;
-    color: $font-color;
-  }
-
-
-  .main-text-light {
-    font-weight: normal;
-    font-style: normal;
-    line-height: 2em;
-    text-align: justify;
-    color: white !important;
-  }
-  .brands-section {
-    background: white;
-  }
-  .maxvw100 {
-    max-width: 100vw;
-  }
-
-  .landing-page {
-    justify-content: center;
-    align-items: center;
-    background: white;
-  }
-
-  .arnie-logo {
-    font-family: $title-font;
-    font-size: 1.5vw;
-    font-weight: 300;
-    text-transform: uppercase;
-  }
-  .schrage-logo {
-    font-family: $title-font;
-    font-size: 1.5vw;
-    font-weight: 300;
-    color: rgba(0, 0, 0, 0);
-    text-transform: uppercase;
-    -webkit-text-stroke-width: 1px;
-    -webkit-text-stroke-color: white;
-    mix-blend-mode: difference;
-  }
-  
-  .whitebg {
-    background-color: white;
-  }
-  .what-i-do {
-    background-color: $dark-background;
-  }
-
-  .landing-title,
-  .main-title {
-    font-size: 5vw;
-    font-weight: 600;
-  }
-
-  .project-details {
-    padding-left: 9vw;
-    padding-right: 3vw;
-  }
-  .project-title {
-    font-family: $title-font;
-    font-size: 2.5vw;
-    font-weight: 500;
-    padding-bottom: 2.5%;
-  }
-
-  .mywork-title {
-    position: sticky;
-    position: -webkit-sticky;
-    top: 15vh;
-    padding: 0% 10vw;
-    margin-bottom: 1%;
-  }
-
-  .short-description {
-    font-family: $title-font;
-    font-size: 1.3vw;
-    font-weight: 300;
-    padding-bottom: 5%;
-  }
-
-  .accordion-title {
-    font-family: $title-font;
-    font-size: 3vw;
-    font-weight: 600;
-    text-decoration: none;
-  }
-
-  .landing-text {
-    padding: 5%;
-  }
-  .nice-to {
-    font-weight: 400;
-  }
-
- 
-  .fixed {
-    position: fixed;
-    mix-blend-mode: difference;
-  }
-  .main-nav {
-    font-family: $title-font;
-    font-size: 1vw;
-    text-transform: uppercase;
-    padding: 2% 5vw;
-    background-color: transparent;
-  }
-  .main-text {
-    font-weight: normal;
-    font-style: normal;
-    line-height: 2em;
-    text-align: justify;
-  }
-
-  .outline-text-black {
-    -webkit-text-stroke-width: 1px;
-    -webkit-text-stroke-color: black;
-    color: rgba(0, 0, 0, 0);
-  }
-
-  .outline-text-white {
-    -webkit-text-stroke-width: 1px;
-    -webkit-text-stroke-color: white;
-    color: rgba(0, 0, 0, 0);
-  }
-  .weight400 {
-    font-weight: 400;
-  }
-
-  section {
-    //scroll-snap-align: start;
-    height: 100vh;
-    display: flex;
-    flex-direction: row;
-  }
-
-  .cta-button {
-    border-top: 1px;
-    border-right: 3px;
-    border-bottom: 3px;
-    border-left: 1px;
-    border-style: solid;
-    border-color: black;
-  }
-
-  .contact-button {
-    display: flex;
-    transition: background-color 0.5s ease;
-    background-color: white;
-    color: $dark-background;
-    max-width: 10vw;
-    padding: 2% 3%;
-
-    p,
-    i,
-    a {
-      transition: color 0.5s ease;
-      color: $dark-background;
-    }
-  }
-
-  .contact-button:hover {
-    background-color: $dark-background;
-    p,
-    i,
-    a {
-      color: white;
-    }
-  }
-
-  .button-icon {
-    width: 1vw;
-    height: auto;
-  }
-
-  .card {
-    background-color: transparent;
-    border: none;
-  }
-
-  .card-header button {
-    color: $power-color;
-  }
-
-  .card-header {
-    padding: 0.5rem 0rem;
-    border: none;
-  }
-  .card-body {
-    font-family: $text-font;
-    color: white;
-    font-size: 1vw;
-  }
-
-  .grid {
-    display: grid;
-    width: 100%;
-    grid-template-columns: 1fr 1fr 1fr;
-    grid-template-rows: 1fr 1fr 1fr;
-    grid-gap: 20px;
-    align-items: center;
-    justify-items: center;
-  }
-
-  .grid .fab {
-    font-size: $icon-size;
-    color: $dark-background;
-  }
-
-  .brands-section .fab:hover {
-    font-size: $icon-size;
-    color: $regular-color;
-  }
-
-  .btn-link:hover {
-    color: #ffffff;
-  }
-  .icon-desc {
-    text-align: center;
-    padding-top: 2vh;
-    font-weight: 900;
-    font-size: 1vw;
-  }
-
-  .brands-padding {
-    padding: 5% 15%;
-  }
-  .vh100col {
-    height: 100%;
-  }
-
-  .my-work {
-    background-color: $dark-background;
-    height: calc(100vh - 8vh);
-  }
-
-  .mockup-video {
-    max-width: 100%;
-  }
   .carousel-control-next,
   .carousel-control-prev {
-    width: 5%;
-    top: 20%;
+    top: 0;
   }
+  .address {
+    font-size: 1.5vw;
+    display: block;
+    text-align: center;
+  }
+}
 
-  .carousel {
-    height: 90%;
-    margin-top: 10%;
-  }
+.getintouch .landing-title {
+  padding-bottom: 5%;
+}
 
-  .carousel-item {
-    padding-top: 10vh;
+@media (min-width: 1400px) {
+  .main-text,
+  .main-text-light {
+    font-size: 1vw;
   }
-  .project-link {
-    padding-top: 2%;
-  }
-  a {
-    color: white;
-    text-decoration: underline;
-  }
-
-  .footer {
-    background-color: #222831;
-    height: $footer-height;
-  }
-
-  .footer h2 {
-    color: white;
-    font-family: $text-font;
-    font-size: 0.8vw;
-  }
-
-  .footer a {
-    text-decoration: none;
-    font-size: 0.8vw;
-  }
-
-  .footer .social-icon {
-    margin-right: 20px;
-  }
-
-  .contact-text {
-    padding: 5vh 20vw;
-  }
-
-  .contact-button-footer {
-    width: 10vw;
-    padding: 1vh;
-    transition: background-color 0.5s ease;
-
-    p,
-    i {
-      transition: color 0.5s ease;
-      color: $dark-background;
-    }
-  }
-
-  .contact-button-footer:hover {
-    background-color: $dark-background;
-    p,
-    i {
-      color: white;
-    }
-    img {
-      fill: white;
-    }
-  }*/
 }
 /*# sourceMappingURL=style.css.map */
